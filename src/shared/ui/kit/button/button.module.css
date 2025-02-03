@@ -1,0 +1,45 @@
+.button {
+  font-weight: 600;
+  border-radius: 62px;
+  font-size: 0.875rem;
+  padding: 8px 28px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.whiteButton {
+  background-color: #FFFFFF;
+  color: #0B0831;
+  border: 1px solid #FFF;
+
+  &:hover {
+    background: transparent;
+    color: #FFFFFF;
+  }
+}
+
+.transparentButton {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFF;
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #0B0831;
+  }
+}
+
+.orangeButton {
+  background-color: #F85C3A;
+  border: 1px solid #F85C3A;
+  color: #FFFFFF;
+
+  &:hover {
+    background: transparent;
+    color: #F85C3A;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

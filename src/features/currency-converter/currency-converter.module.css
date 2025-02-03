@@ -1,0 +1,19 @@
+.currencyConverterContainer {
+  padding: 40px 48px;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  width: 445px;
+}
+
+.recipientGets {
+  margin-top: 40px;
+}
+
+.currencyField {
+  width: 100%;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}

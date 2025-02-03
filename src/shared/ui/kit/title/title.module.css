@@ -1,0 +1,35 @@
+.title {
+  line-height: 106.8%;
+}
+
+.levelOne {
+  font-size: 2.5rem;
+}
+
+.levelTwo {
+  font-size: 1.25rem;
+}
+
+.colorWhite {
+  color: #FFFFFF;
+}
+
+.colorBlack {
+  color: #2D2D2D;
+}
+
+.weightBold {
+  font-weight: 600;
+}
+
+.weightSemibold {
+  font-weight: 600;
+}
+
+.weightNorma {
+  font-weight: 400;
+}
+
+.weightLight {
+  font-weight: 300;
+}

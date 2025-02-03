@@ -1,95 +1,62 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { CurrencyConverter } from '@/features/currency-converter';
+
+import { FourDots, SupportUkraine } from '@/shared/ui/icons';
+import { Button } from '@/shared/ui/kit/button';
+import { Text } from '@/shared/ui/kit/text';
+import { Title } from '@/shared/ui/kit/title';
+
+import st from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <main>
+      <header className={st.homeHeader}>
+        <section className={st.presentation}>
+          <Image src="/full-logo.svg" alt="full-logo" width="188" height="36" />
+          <div className={st.contentContainer}>
+            <Title weight={600} color="white">
+              Smart electronic money
+            </Title>
+            <Title weight={300} color="white">
+              solution in your pocket.
+            </Title>
+            <div className={st.contentDescription}>
+              <Text color="white">Send and receive payments across</Text>
+              <Text color="white">Canada and worldwide.</Text>
+            </div>
+          </div>
+        </section>
+        <section className={st.calculatorDemo}>
+          <div className={st.headerActions}>
+            <div>
+              <Link href="https://savelife.in.ua/en/">
+                <SupportUkraine />
+              </Link>
+              <Button variant="transparent">Login</Button>
+              <Button variant="white">Sign Up</Button>
+            </div>
+            <FourDots />
+          </div>
+          <div className={st.contentContainer}>
+            <Title weight={600} color="white">
+              Global money transfer
+            </Title>
+            <Title weight={300} color="white">
+              calculator
+            </Title>
+            <div className={st.contentDescription}>
+              <Text color="white">Calculate fees and conversion costs</Text>
+              <Text color="white">for sending money abroad</Text>
+            </div>
+          </div>
+          <CurrencyConverter />
+        </section>
+      </header>
+    </main>
   );
 }

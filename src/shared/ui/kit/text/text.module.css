@@ -1,0 +1,19 @@
+.weightLight {
+  font-weight: 300;
+}
+
+.colorWhite {
+  color: #FFFFFF;
+}
+
+.colorBlack {
+  color: #2D2D2D;
+}
+
+.sizeBase {
+  font-size: 1rem;
+}
+
+.sizeSmall {
+  font-size: 0.75rem;
+}

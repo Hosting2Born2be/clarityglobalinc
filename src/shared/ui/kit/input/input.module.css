@@ -1,0 +1,22 @@
+.inputEl {
+  background: transparent;
+  color: #2D2D2D;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.inputContainer {
+  background-color: #FFF;
+  border-radius: 62px;
+  padding: 14px 20px;
+  border: 1px solid #DCDCDC;
+}
+
+.widthFull {
+  width: 100%;
+}
+
+.widthMax {
+  width: max-content;
+}
