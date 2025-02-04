@@ -2,12 +2,32 @@
   font-weight: 300;
 }
 
+.weightNormal {
+  font-weight: 400;
+}
+
+.weightMedium {
+  font-weight: 500;
+}
+
+.weightSemibold {
+  font-weight: 600;
+}
+
+.weightBold {
+  font-weight: 700;
+}
+
 .colorWhite {
   color: #FFFFFF;
 }
 
 .colorBlack {
   color: #2D2D2D;
+}
+
+.colorRed {
+  color: #f00;
 }
 
 .sizeBase {

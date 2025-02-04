@@ -1,0 +1,42 @@
+.additionalField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  .icon {
+    background-color: #F85C3A;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fieldWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .accordionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+  }
+
+
+  p {
+    flex-shrink: 0;
+  }
+}
+
+.additionalFieldsLayout {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

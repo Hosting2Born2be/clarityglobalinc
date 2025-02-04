@@ -9,11 +9,15 @@
   margin-top: 40px;
 }
 
-.currencyField {
-  width: 100%;
-  margin-top: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+.additionalFieldWithAccordion {
+  align-items: baseline !important;
+
+  .divider {
+    padding-bottom: 4px;
+  }
+}
+
+.arriveHint {
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
