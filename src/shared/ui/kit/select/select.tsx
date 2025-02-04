@@ -15,21 +15,27 @@ import { SelectOption } from './types';
 
 export function Select({
   options,
-  trigger,
+  value,
+  onChange,
 }: {
   options: SelectOption[];
-  trigger: React.ReactNode;
+  value: string;
+  onChange: (value: string) => void;
 }) {
   return (
     <Root>
       <DropdownMenuTrigger className={st.selectTrigger}>
-        {trigger}
+        {value}
         <ArrowDown />
       </DropdownMenuTrigger>
       <DropdownMenuPortal>
         <DropdownMenuContent className={st.selectContent} sideOffset={5}>
           {options.map(option => (
-            <DropdownMenuItem key={option.value} className={st.selectItem}>
+            <DropdownMenuItem
+              key={option.value}
+              className={st.selectItem}
+              onClick={() => onChange(option.value)}
+            >
               {option.label}
             </DropdownMenuItem>
           ))}

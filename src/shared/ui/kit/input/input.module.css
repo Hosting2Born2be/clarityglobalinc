@@ -10,7 +10,14 @@
   background-color: #FFF;
   border-radius: 62px;
   padding: 14px 20px;
+}
+
+.inputBorderDefault {
   border: 1px solid #DCDCDC;
+}
+
+.inputBorderError {
+  border: 1px solid #f00;
 }
 
 .widthFull {

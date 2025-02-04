@@ -54,7 +54,9 @@ export default function Home() {
               <Text color="white">for sending money abroad</Text>
             </div>
           </div>
-          <CurrencyConverter />
+          <div className={st.currencyConverterLayout}>
+            <CurrencyConverter />
+          </div>
         </section>
       </header>
     </main>
