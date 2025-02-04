@@ -7,17 +7,17 @@ import st from './text.module.css';
 export function Text({
   children,
   weight = 300,
-  size = 'base',
+  size = 'lg',
   color = 'black',
   className,
 }: {
   children: React.ReactNode;
   weight?: 300 | 400 | 500 | 600 | 700;
   color?: 'black' | 'white' | 'red';
-  size?: 'sm' | 'base';
+  size?: 'sm' | 'base' | 'lg' | 'xl';
   className?: string;
 }) {
-  const titleClasses = cn(st.text, {
+  const textClasses = cn(st.text, {
     [st.weightLight]: weight === 300,
     [st.weightNormal]: weight === 400,
     [st.weightMedium]: weight === 500,
@@ -26,9 +26,11 @@ export function Text({
     [st.colorBlack]: color === 'black',
     [st.colorWhite]: color === 'white',
     [st.colorRed]: color === 'red',
+    [st.sizeExtaLarge]: size === 'xl',
+    [st.sizeLarge]: size === 'lg',
     [st.sizeBase]: size === 'base',
     [st.sizeSmall]: size === 'sm',
   });
 
-  return <p className={cn(titleClasses, className)}>{children}</p>;
+  return <p className={cn(textClasses, className)}>{children}</p>;
 }

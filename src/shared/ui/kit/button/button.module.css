@@ -43,3 +43,9 @@
 .fullWidth {
   width: 100%;
 }
+
+.mediumSize {
+  width: 255px;
+  height: 45px;
+  font-size: 1rem;
+}

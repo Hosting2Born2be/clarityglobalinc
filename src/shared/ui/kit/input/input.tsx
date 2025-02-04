@@ -14,9 +14,10 @@ export function Input({
   onChange,
   onBlur,
   placeholder,
+  error,
+  readonly = false,
   fullWidth = true,
   type = 'text',
-  error,
 }: {
   value?: string | string[] | number;
   defaultValue?: string | string[] | number;
@@ -25,6 +26,7 @@ export function Input({
   onChange?: ChangeEventHandler<HTMLInputElement>;
   onBlur?: FocusEventHandler<HTMLInputElement>;
   fullWidth?: boolean;
+  readonly?: boolean;
   type?: 'text' | 'number' | 'password';
   error?: React.ReactNode;
 }) {
@@ -46,6 +48,7 @@ export function Input({
         defaultValue={defaultValue}
         onChange={onChange}
         onBlur={onBlur}
+        readOnly={readonly}
       />
       <div style={{ position: 'absolute', left: 16 }}>
         {error && (

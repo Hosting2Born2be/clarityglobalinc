@@ -72,7 +72,7 @@ export function CurrencyConverter() {
     <form className={st.currencyConverterContainer}>
       <AmountCurrency control={control} error={errors.amount?.message} />
       <TransferInfo control={control} />
-      <Title level={2}>Recipient gets</Title>
+      <Title level={4}>Recipient gets</Title>
       <ResultCurrency control={control} />
       <Text size="sm" className={st.arriveHint}>
         Should arrive in 1-3 business days.

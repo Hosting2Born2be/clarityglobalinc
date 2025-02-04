@@ -1,0 +1,54 @@
+.divider {
+  margin-top: 84px;
+  margin-bottom: 24px;
+  background-color: #F85C3A;
+  width: 64px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+.layout {
+  margin-top: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 0 192px;
+}
+
+.cardLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+.card {
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 44px 24px 24px 24px;
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: #F85C3A;
+  border-radius: 100%;
+}
+
+.cardDescContainer {
+  width: 280px;
+}
