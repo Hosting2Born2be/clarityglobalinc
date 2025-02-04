@@ -8,12 +8,12 @@ export function Title({
   children,
   weight = 600,
   color = 'black',
-  level = 1,
+  level = 2,
 }: {
   children: React.ReactNode;
   weight?: 300 | 400 | 600 | 700;
   color?: 'black' | 'white';
-  level?: 1 | 2;
+  level?: 1 | 2 | 3 | 4;
 }) {
   const titleClasses = cn(st.title, {
     [st.weightLight]: weight === 300,
@@ -24,6 +24,8 @@ export function Title({
     [st.colorWhite]: color === 'white',
     [st.levelOne]: level === 1,
     [st.levelTwo]: level === 2,
+    [st.levelThree]: level === 3,
+    [st.levelFour]: level === 4,
   });
 
   return <h1 className={titleClasses}>{children}</h1>;

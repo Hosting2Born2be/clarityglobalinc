@@ -1,0 +1,12 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F85C3A;
+  font-size: 0.75rem;
+  padding: 8px 26px;
+  font-weight: 600;
+  background-color: #FEE7E1;
+  border-radius: 70px;
+  width: max-content;
+}

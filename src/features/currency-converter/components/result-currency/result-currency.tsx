@@ -14,7 +14,11 @@ export function ResultCurrency({ control }: { control: Control<CurrencyDTO> }) {
 
   return (
     <div className={st.currencyField}>
-      <Input placeholder="Result" defaultValue={gets === '0' ? '' : gets} />
+      <Input
+        placeholder="Result"
+        defaultValue={gets === '0' ? '' : gets}
+        readonly
+      />
       <Controller
         name="toCurrency"
         control={control}

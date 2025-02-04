@@ -30,8 +30,16 @@
   color: #f00;
 }
 
-.sizeBase {
+.sizeExtaLarge {
+  font-size: 1.5rem;
+}
+
+.sizeLarge {
   font-size: 1rem;
+}
+
+.sizeBase {
+  font-size: 0.875rem;
 }
 
 .sizeSmall {

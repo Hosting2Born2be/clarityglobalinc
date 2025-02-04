@@ -18,7 +18,7 @@ export function AmountCurrency({
 }) {
   return (
     <>
-      <Title level={2}>You send exactly</Title>
+      <Title level={4}>You send exactly</Title>
       <div className={st.currencyField}>
         <Controller
           name="amount"
