@@ -1,15 +1,17 @@
-import { AsSimple } from './components/as-simple';
-import { CanYouDo } from './components/can-you-do';
-import { Faq } from './components/faq';
-import { GetFreeAccount } from './components/get-free-account';
-import { Header } from './components/header';
-import { KnowMore } from './components/know-more';
-import { NoFee } from './components/no-fee';
-import { Offers } from './components/offers';
-import { OurValues } from './components/our-values';
-import { Reviews } from './components/reviews';
-import { SimpleSteps } from './components/simple-steps';
-import { WhyChooseUs } from './components/why-choose-us';
+import {
+  AsSimple,
+  CanYouDo,
+  Faq,
+  GetFreeAccount,
+  Header,
+  KnowMore,
+  NoFee,
+  Offers,
+  OurValues,
+  Reviews,
+  SimpleSteps,
+  WhyChooseUs,
+} from '@/widgets/home/components';
 
 export default function Home() {
   return (
