@@ -1,4 +1,4 @@
-import { MotionValue } from 'framer-motion';
+import { MotionValue } from '@/shared/lib/motion';
 
 export type AnimationsMeta = {
   moveX: MotionValue<number>;

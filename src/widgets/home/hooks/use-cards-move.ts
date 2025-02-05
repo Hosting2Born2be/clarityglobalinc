@@ -1,4 +1,4 @@
-import { useMotionValue, useTransform } from 'framer-motion';
+import { useMotionValue, useTransform } from '@/shared/lib/motion';
 
 export const useCardsMove = () => {
   const x = useMotionValue(0);
