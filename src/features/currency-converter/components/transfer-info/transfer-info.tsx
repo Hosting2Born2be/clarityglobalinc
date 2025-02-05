@@ -1,7 +1,6 @@
 'use client';
 
-import { Control } from '@/shared/lib/forms';
-import { Controller } from '@/shared/lib/forms';
+import { Control, Controller } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/styles';
 import { EqualIcon, MinusIcon, MultiplyIcon } from '@/shared/ui/icons';
 import { Accordion } from '@/shared/ui/kit/accordion';

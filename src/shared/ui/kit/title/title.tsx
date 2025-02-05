@@ -6,18 +6,21 @@ import st from './title.module.css';
 
 export function Title({
   children,
+  className,
   weight = 600,
   color = 'black',
   level = 2,
 }: {
   children: React.ReactNode;
-  weight?: 300 | 400 | 600 | 700;
+  weight?: 300 | 400 | 500 | 600 | 700;
   color?: 'black' | 'white';
-  level?: 1 | 2 | 3 | 4;
+  level?: 1 | 2 | 3 | 4 | 5;
+  className?: string;
 }) {
   const titleClasses = cn(st.title, {
     [st.weightLight]: weight === 300,
     [st.weightNormal]: weight === 400,
+    [st.weightMedium]: weight === 500,
     [st.weightSemibold]: weight === 600,
     [st.weightBold]: weight === 700,
     [st.colorBlack]: color === 'black',
@@ -26,7 +29,8 @@ export function Title({
     [st.levelTwo]: level === 2,
     [st.levelThree]: level === 3,
     [st.levelFour]: level === 4,
+    [st.levelFive]: level === 5,
   });
 
-  return <h1 className={titleClasses}>{children}</h1>;
+  return <h1 className={cn(titleClasses, className)}>{children}</h1>;
 }

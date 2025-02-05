@@ -1,0 +1,17 @@
+.layout {
+  margin: 176px 165px 0 165px;
+}
+
+.accordionContainer {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contentLayout {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

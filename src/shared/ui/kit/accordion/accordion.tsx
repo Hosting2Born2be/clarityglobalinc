@@ -1,50 +1,29 @@
 'use client';
 
-import {
-  Content,
-  Header,
-  Item,
-  Root,
-  Trigger,
-} from '@radix-ui/react-accordion';
-
-import { cn } from '@/shared/lib/styles';
-import { ArrowDown } from '@/shared/ui/icons';
-
-import st from './accordion.module.css';
+import { CompactAccordion } from './compact-accordion';
+import { WideAccordion } from './wide-accordion';
 
 export function Accordion({
   trigger,
   content,
   className,
   contentAlign = 'left',
+  mode = 'compact',
 }: {
-  trigger: string;
+  trigger: React.ReactNode;
   content: React.ReactNode;
+  mode?: 'compact' | 'wide';
   className?: string;
   contentAlign?: 'left' | 'right';
 }) {
-  const contentClasses = cn(st.contentAlign, {
-    [st.contentAlignLeft]: contentAlign === 'left',
-    [st.contentAlignRight]: contentAlign === 'right',
-  });
-
-  return (
-    <Root
-      className={cn(st.root, className)}
-      type="single"
-      defaultValue="item-0"
-      collapsible
-    >
-      <Item className={st.item} value="item-1">
-        <Header className={st.header}>
-          <Trigger className={st.trigger}>{trigger}</Trigger>
-          <ArrowDown />
-        </Header>
-        <Content className={st.content}>
-          <div className={contentClasses}>{content}</div>
-        </Content>
-      </Item>
-    </Root>
+  return mode === 'compact' ? (
+    <CompactAccordion
+      trigger={trigger}
+      content={content}
+      className={className}
+      contentAlign={contentAlign}
+    />
+  ) : (
+    <WideAccordion trigger={trigger} content={content} className={className} />
   );
 }
