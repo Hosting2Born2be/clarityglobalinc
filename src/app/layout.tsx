@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
+import { Footer } from '@/shared/ui/components/footer';
+
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -21,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

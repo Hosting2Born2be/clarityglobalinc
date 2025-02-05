@@ -13,7 +13,7 @@ export function Text({
 }: {
   children: React.ReactNode;
   weight?: 300 | 400 | 500 | 600 | 700;
-  color?: 'black' | 'white' | 'red';
+  color?: 'black' | 'white' | 'red' | 'grey';
   size?: 'sm' | 'base' | 'lg' | 'xl';
   className?: string;
 }) {
@@ -24,6 +24,7 @@ export function Text({
     [st.weightSemibold]: weight === 600,
     [st.weightBold]: weight === 700,
     [st.colorBlack]: color === 'black',
+    [st.colorGrey]: color === 'grey',
     [st.colorWhite]: color === 'white',
     [st.colorRed]: color === 'red',
     [st.sizeExtaLarge]: size === 'xl',

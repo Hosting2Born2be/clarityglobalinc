@@ -9,14 +9,6 @@
   margin-top: 40px;
 }
 
-.additionalFieldWithAccordion {
-  align-items: baseline !important;
-
-  .divider {
-    padding-bottom: 4px;
-  }
-}
-
 .arriveHint {
   margin-top: 15px;
   margin-bottom: 25px;

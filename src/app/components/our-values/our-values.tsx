@@ -47,7 +47,7 @@ function ValueCard({
   return (
     <article className={st.card}>
       <div className={st.dot} />
-      <Title level={4} weight={600}>
+      <Title level={5} weight={600}>
         {title}
       </Title>
       <Text size="base" weight={400} className={st.cardDescContainer}>

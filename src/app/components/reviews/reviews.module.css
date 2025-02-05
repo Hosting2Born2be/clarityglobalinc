@@ -1,0 +1,39 @@
+.layout {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 67px;
+}
+
+.card {
+  width: 80%;
+  min-height: 206px;
+  border-radius: 20px;
+  border: 2px solid #E9E9E9;
+  background: #FFF;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardCountry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardReview {
+  text-align: left;
+  margin-top: 10px;
+}
