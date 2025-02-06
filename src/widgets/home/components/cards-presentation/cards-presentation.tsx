@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 
+import { AnimationsMeta } from '@/widgets/home/types/animations';
+
 import { motion } from '@/shared/lib/motion';
 import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
@@ -9,7 +11,6 @@ import { Title } from '@/shared/ui/kit/title';
 
 import mainSt from '../page.module.css';
 import st from './cards-presentation.module.css';
-import { AnimationsMeta } from '@/widgets/home/types/animations';
 
 export function CardsPresentation({
   animationsMeta,
