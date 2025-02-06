@@ -103,7 +103,8 @@
   }
 
   .navMenu {
-    gap: 54px;
+    gap: 12px;
+    justify-content: space-between;
   }
 
   .guidelinesMobile {
