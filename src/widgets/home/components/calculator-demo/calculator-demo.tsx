@@ -4,10 +4,11 @@ import Link from 'next/link';
 
 import { SignUpDialog } from '@/core/auth/components';
 
+import { BurgerMenu } from '@/features/burger-menu';
 import { CurrencyConverter } from '@/features/currency-converter';
 
 import { cn } from '@/shared/lib/styles';
-import { FourDots, SupportUkraine } from '@/shared/ui/icons';
+import { SupportUkraine } from '@/shared/ui/icons';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -26,9 +27,9 @@ export function CalculatorDemo() {
           <Button variant="transparent">Login</Button>
           <SignUpDialog trigger={<Button variant="white">Sign Up</Button>} />
         </div>
-        <button className={st.menu}>
-          <FourDots />
-        </button>
+        <span className={st.menu}>
+          <BurgerMenu />
+        </span>
       </div>
       <div className={mainSt.contentContainer}>
         <Title weight={600} color="white">
