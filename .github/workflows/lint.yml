@@ -22,10 +22,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          echo "::add-path::$(corepack bin)"
+        run: npm install -g pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
