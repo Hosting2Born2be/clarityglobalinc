@@ -1,5 +1,7 @@
 'use client';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { cn } from '@/shared/lib/styles';
 import { Button } from '@/shared/ui/kit/button';
 import { Title } from '@/shared/ui/kit/title';
@@ -23,9 +25,13 @@ export function CanYouDo() {
           />
         ))}
       </section>
-      <Button variant="orange" size="md">
-        Make payment
-      </Button>
+      <SignUpDialog
+        trigger={
+          <Button variant="orange" size="md">
+            Make payment
+          </Button>
+        }
+      />
     </section>
   );
 }

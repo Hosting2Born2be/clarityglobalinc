@@ -1,5 +1,7 @@
 'use client';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { Button } from '@/shared/ui/kit/button';
 import { Divider } from '@/shared/ui/kit/divider';
 import { Tag } from '@/shared/ui/kit/tag';
@@ -51,9 +53,13 @@ export function WhyChooseUs() {
           ))}
         </div>
       </section>
-      <Button variant="orange" size="md">
-        Send payment
-      </Button>
+      <SignUpDialog
+        trigger={
+          <Button variant="orange" size="md">
+            Send payment
+          </Button>
+        }
+      />
     </section>
   );
 }

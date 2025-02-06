@@ -16,7 +16,7 @@ export function Button({
   type = 'button',
 }: {
   children: React.ReactNode;
-  variant?: 'white' | 'transparent' | 'orange';
+  variant?: 'white' | 'transparent' | 'orange' | 'orangeOutline';
   type?: 'submit' | 'reset' | 'button';
   fullWidth?: boolean;
   onSubmit?: FormEventHandler<HTMLButtonElement>;
@@ -27,6 +27,7 @@ export function Button({
     [st.whiteButton]: variant === 'white',
     [st.transparentButton]: variant === 'transparent',
     [st.orangeButton]: variant === 'orange',
+    [st.orangeOutlineButton]: variant === 'orangeOutline',
     [st.fullWidth]: fullWidth,
     [st.mediumSize]: size === 'md',
   });
