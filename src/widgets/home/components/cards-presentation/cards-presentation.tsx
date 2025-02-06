@@ -8,7 +8,6 @@ import { BurgerMenu } from '@/features/burger-menu';
 
 import { motion } from '@/shared/lib/motion';
 import { cn } from '@/shared/lib/styles';
-import { FourDots } from '@/shared/ui/icons';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
