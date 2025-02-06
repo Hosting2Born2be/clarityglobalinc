@@ -16,9 +16,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Enable Corepack
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate  # Ensures the latest pnpm version is active
+        run:
+          corepack enable && corepack prepare pnpm@9.15.2 --activate
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
