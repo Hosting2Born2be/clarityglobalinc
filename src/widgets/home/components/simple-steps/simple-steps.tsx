@@ -33,13 +33,15 @@ export function SimpleSteps() {
         <Title level={3} className={st.title}>
           To get started, follow three simple steps:
         </Title>
-        <SignUpDialog
-          trigger={
-            <Button size="md" variant="orange">
-              Open a Free Account
-            </Button>
-          }
-        />
+        <div className={st.signUpButton}>
+          <SignUpDialog
+            trigger={
+              <Button size="md" variant="orange">
+                Open a Free Account
+              </Button>
+            }
+          />
+        </div>
       </section>
       <section className={st.cards}>
         {steps.map(({ title, description }, index) => (
@@ -51,6 +53,15 @@ export function SimpleSteps() {
           />
         ))}
       </section>
+      <div className={st.signUpButtonMobile}>
+        <SignUpDialog
+          trigger={
+            <Button size="md" variant="orange">
+              Open a Free Account
+            </Button>
+          }
+        />
+      </div>
     </section>
   );
 }

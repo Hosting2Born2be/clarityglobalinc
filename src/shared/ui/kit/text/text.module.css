@@ -42,6 +42,16 @@
   font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+  .sizeExtaLarge {
+    font-size: 0.875rem;
+  }
+
+  .sizeLarge {
+    font-size: 0.875rem;
+  }
+}
+
 .sizeBase {
   font-size: 0.875rem;
 }

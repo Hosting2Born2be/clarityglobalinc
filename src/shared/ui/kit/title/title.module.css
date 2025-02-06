@@ -49,3 +49,25 @@
 .weightLight {
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .levelOne {
+    font-size: 1.5rem;
+  }
+
+  .levelThree {
+    font-size: 1.5rem;
+  }
+
+  .levelTwo {
+    font-size: 1.5rem;
+  }
+
+  .levelFour {
+    font-size: 0.875rem !important;
+  }
+
+  .levelFive {
+    font-size: 0.875rem !important;
+  }
+}

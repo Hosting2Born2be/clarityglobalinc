@@ -19,14 +19,16 @@ export function CalculatorDemo() {
   return (
     <section className={cn(st.calculatorDemo, mainSt.headerSection)}>
       <div className={st.headerActions}>
-        <div>
+        <div className={st.quickActions}>
           <Link href="https://savelife.in.ua/en/">
             <SupportUkraine />
           </Link>
           <Button variant="transparent">Login</Button>
           <SignUpDialog trigger={<Button variant="white">Sign Up</Button>} />
         </div>
-        <FourDots />
+        <button className={st.menu}>
+          <FourDots />
+        </button>
       </div>
       <div className={mainSt.contentContainer}>
         <Title weight={600} color="white">

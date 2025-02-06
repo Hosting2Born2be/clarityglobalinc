@@ -21,7 +21,7 @@ export function Footer() {
     <footer className={st.layout}>
       <section className={st.companyInfoLayout}>
         <div className={st.logo}>
-          <Link href="https://clarityglobalinc.com/">
+          <Link href="https://clarityglobalinc.com/" className={st.logoLink}>
             <Image src="/full-logo.svg" alt="logo" width={183} height={33} />
           </Link>
           <Text size="sm" color="grey" className={st.companyText}>
@@ -31,51 +31,55 @@ export function Footer() {
           </Text>
         </div>
         <div className={st.socialsLayout}>
-          <Link
-            href="https://www.facebook.com/clarityglobalinc"
-            target="_blank"
-          >
-            <Facebook />
-          </Link>
-          <Link href="https://wa.me/38669403456" target="_blank">
-            <Viber />
-          </Link>
-          <Link href="https://t.me/ClarityGlobalSupport" target="_blank">
-            <Telegram />
-          </Link>
-          <Link href="https://www.youtube.com/@clarityglobal" target="_blank">
-            <Youtube />
-          </Link>
-          <Link
-            className={st.linkedin}
-            href="https://www.linkedin.com/company/clarityglobalinc/"
-            target="_blank"
-          >
-            <Linkedin />
-            <div>
-              <Text size="sm" color="grey" weight={700}>
-                Clarity Global Inc
-              </Text>
-              <Text size="sm" color="grey">
-                Company Profile
-              </Text>
-            </div>
-          </Link>
-          <Link className={st.linkedin} href="#" target="_blank">
-            <Linkedin />
-            <div>
-              <Text size="sm" color="grey" weight={700}>
-                Svitlana Koval
-              </Text>
-              <Text size="sm" color="grey">
-                Chief Accountant
-              </Text>
-            </div>
-          </Link>
+          <div className={st.socialGroups}>
+            <Link
+              href="https://www.facebook.com/clarityglobalinc"
+              target="_blank"
+            >
+              <Facebook />
+            </Link>
+            <Link href="https://wa.me/38669403456" target="_blank">
+              <Viber />
+            </Link>
+            <Link href="https://t.me/ClarityGlobalSupport" target="_blank">
+              <Telegram />
+            </Link>
+            <Link href="https://www.youtube.com/@clarityglobal" target="_blank">
+              <Youtube />
+            </Link>
+          </div>
+          <div className={st.linkedinGroup}>
+            <Link
+              className={st.linkedin}
+              href="https://www.linkedin.com/company/clarityglobalinc/"
+              target="_blank"
+            >
+              <Linkedin />
+              <div>
+                <Text size="sm" color="grey" weight={700}>
+                  Clarity Global Inc
+                </Text>
+                <Text size="sm" color="grey">
+                  Company Profile
+                </Text>
+              </div>
+            </Link>
+            <Link className={st.linkedin} href="#" target="_blank">
+              <Linkedin />
+              <div>
+                <Text size="sm" color="grey" weight={700}>
+                  Svitlana Koval
+                </Text>
+                <Text size="sm" color="grey">
+                  Chief Accountant
+                </Text>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
       <Divider className={st.divider} />
-      <section style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <section className={st.menu}>
         <div className={st.column}>
           <Text size="lg" color="white" weight={600}>
             Office
@@ -93,33 +97,44 @@ export function Footer() {
             M4N 3N, Canada
           </Text>
         </div>
+        <div className={st.navMenu}>
+          <div className={st.column}>
+            <Text size="lg" color="white" weight={600}>
+              Menu
+            </Text>
+            <Navigation href="/">Home</Navigation>
+            <Navigation href="/receive">Receive</Navigation>
+            <Navigation href="/unique-offer">Unique offer</Navigation>
+            <Navigation href="/about-us">About us</Navigation>
+            <Navigation href="/whistleblower">Whistleblower</Navigation>
+            <Navigation
+              href="/acceptance-guidelines"
+              className={st.guidelinesMobile}
+            >
+              Acceptance Guidelines
+            </Navigation>
+          </div>
+          <div className={st.column}>
+            <br />
+            <Navigation href="/acceptance-guidelines" className={st.guidelines}>
+              Acceptance Guidelines
+            </Navigation>
+            <Navigation href="/referral-partner-program">
+              Referral partner program
+            </Navigation>
+            <Navigation href="/virtual-cards-services">
+              Virtual cards services
+            </Navigation>
+            <Navigation href="/newsletter">Newsletter</Navigation>
+            <Navigation href="/faq">FAQ</Navigation>
+            <Navigation href="/help">Help</Navigation>
+            <Navigation href="/contact-us">Contact us</Navigation>
+          </div>
+        </div>
         <div className={st.column}>
           <Text size="lg" color="white" weight={600}>
-            Menu
+            Legal
           </Text>
-          <Navigation href="/">Home</Navigation>
-          <Navigation href="/receive">Receive</Navigation>
-          <Navigation href="/unique-offer">Unique offer</Navigation>
-          <Navigation href="/about-us">About us</Navigation>
-          <Navigation href="/whistleblower">Whistleblower</Navigation>
-        </div>
-        <div className={st.column}>
-          <br />
-          <Navigation href="/acceptance-guidelines">
-            Acceptance Guidelines
-          </Navigation>
-          <Navigation href="/referral-partner-program">
-            Referral partner program
-          </Navigation>
-          <Navigation href="/virtual-cards-services">
-            Virtual cards services
-          </Navigation>
-          <Navigation href="/newsletter">Newsletter</Navigation>
-          <Navigation href="/faq">FAQ</Navigation>
-          <Navigation href="/help">Help</Navigation>
-          <Navigation href="/contact-us">Contact us</Navigation>
-        </div>
-        <div className={st.column}>
           <Navigation href="/terms-of-use">Terms of Use</Navigation>
           <Navigation href="/privacy-policy">Privacy Policy</Navigation>
           <Navigation href="/privacy-notice">Privacy Notice</Navigation>

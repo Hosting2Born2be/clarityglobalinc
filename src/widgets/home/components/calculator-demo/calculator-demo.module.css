@@ -2,6 +2,8 @@
   background-color: #282828;
   padding-left: 5rem;
   position: relative;
+  height: 100%;
+  flex-shrink: 0;
   z-index: 0;
 
   &::before {
@@ -32,4 +34,20 @@
 
 .currencyConverterLayout {
   margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .calculatorDemo {
+    padding: 0 15px 50px 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .headerActions {
+    .quickActions {
+      display: none;
+    }
+  }
 }

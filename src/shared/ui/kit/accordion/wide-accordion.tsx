@@ -34,12 +34,17 @@ export function WideAccordion({
         <Header>
           <Trigger className={st.header}>
             <span className={st.trigger}>{trigger}</span>
-            <Divider />
+            <div className={st.accDivider}>
+              <Divider />
+            </div>
             <div className={st.triggerIcon}>
               <ArrowDown height="14" width="14" color="#FFFFFF" />
             </div>
           </Trigger>
         </Header>
+        <div className={st.mobileDivider}>
+          <Divider />
+        </div>
         <Content className={st.content}>{content}</Content>
       </Item>
     </Root>

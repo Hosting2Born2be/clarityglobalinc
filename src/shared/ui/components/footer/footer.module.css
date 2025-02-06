@@ -6,6 +6,7 @@
 .logo {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 45px;
 }
 
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .companyText {
@@ -22,6 +24,21 @@
 .socialsLayout {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socialGroups {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.linkedinGroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -32,6 +49,7 @@
 .linkedin {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -44,6 +62,7 @@
 .column {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: 6px;
 }
 
@@ -57,4 +76,62 @@
 
 .rights {
   text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navMenu {
+  display: flex;
+  gap: 130px;
+}
+
+.guidelinesMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logoLink {
+    margin-left: -8px;
+  }
+
+  .menu {
+    gap: 26px;
+  }
+
+  .navMenu {
+    gap: 54px;
+  }
+
+  .guidelinesMobile {
+    display: block;
+  }
+
+  .guidelines {
+    display: none;
+  }
+
+  .socialGroups {
+    margin-top: 20px;
+  }
+
+  .socialsLayout {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .layout {
+    padding: 68px 15px 28px 15px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .companyText {
+    width: 100%;
+  }
 }
