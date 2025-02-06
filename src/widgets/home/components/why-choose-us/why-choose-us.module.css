@@ -15,7 +15,7 @@
   position: relative;
   z-index: 0;
 
-  h1 {
+  .title {
     margin: 36px 320px 62px 0;
   }
 
@@ -84,7 +84,7 @@
     margin: 0 15px;
     padding: 70px 20px;
 
-    h1 {
+    .title {
       margin: 16px 0 22px 0;
     }
   }
