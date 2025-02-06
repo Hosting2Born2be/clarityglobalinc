@@ -11,7 +11,7 @@ export function NoFee() {
       <Title level={1} color="white" weight={700}>
         No opening fee and no subscription fee.
       </Title>
-      <Text size="xl" color="white" weight={500}>
+      <Text size="xl" color="white" weight={500} className={st.text}>
         For all individuals when opening an account for the year&#39;s first
         half!
       </Text>

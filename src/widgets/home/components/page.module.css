@@ -5,8 +5,15 @@
 
 .contentContainer {
   margin-top: 4.5rem;
+  position: relative;
 }
 
 .contentDescription {
   margin-top: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .headerSection {
+    width: 100%;
+  }
 }

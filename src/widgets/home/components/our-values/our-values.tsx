@@ -27,7 +27,9 @@ export function OurValues() {
   return (
     <section className={st.layout}>
       <div className={st.divider} />
-      <Title level={3}>Our values</Title>
+      <Title level={3} className={st.title}>
+        Our values
+      </Title>
       <div className={st.cardLayout}>
         {values.map(({ title, description }) => (
           <ValueCard key={title} title={title} description={description} />

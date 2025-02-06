@@ -40,3 +40,9 @@
   align-items: center;
   gap: 30px;
 }
+
+@media (max-width: 768px) {
+  .arrowContainer {
+    margin-top: -20px;
+  }
+}

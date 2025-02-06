@@ -81,6 +81,30 @@
   }
 }
 
+.mobileDivider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .accDivider {
+    display: none;
+  }
+
+  .mobileDivider {
+    margin-top: 12px;
+    display: block;
+  }
+
+  .triggerIcon {
+    flex-shrink: 0;
+  }
+
+  .trigger {
+    width: 80%;
+    text-align: left;
+  }
+}
+
 @keyframes slideDown {
   from {
     height: 0;

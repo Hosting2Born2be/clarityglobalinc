@@ -31,7 +31,11 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
         </div>
         <div className={st.accordionWrapper}>
           <Accordion
-            trigger="Fast transfer fee"
+            trigger={
+              <Text weight={600} size="sm">
+                Fast transfer fee
+              </Text>
+            }
             content={
               <div style={{ marginTop: '10px' }}>
                 <Controller

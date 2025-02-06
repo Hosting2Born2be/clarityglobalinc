@@ -2,7 +2,9 @@
   background-color: #F85C3A;
   padding-left: 10.3rem;
   position: relative;
+  height: 100%;
   z-index: 0;
+  flex-shrink: 0;
 
   &::before {
     content: '';
@@ -14,5 +16,134 @@
     background: url('presentation-rectangles.svg') no-repeat left center;
     background-size: contain;
     z-index: -1;
+  }
+}
+
+.card {
+  width: 608px;
+  height: 636px;
+}
+
+.blackCardLayout {
+  margin-left: 90px;
+  margin-top: -24px;
+}
+
+.smallBlackEllipseLayout {
+  top: 8vh;
+  left: 56vh;
+}
+
+.bigWhiteEllipseLayout {
+  top: 16vh;
+  left: 60vh;
+}
+
+.bigBlackEllipseLayout {
+  top: 36vh;
+  left: 8vh;
+}
+
+.smallWhiteEllipseLayout {
+  top: 10vh;
+  left: 10vh;
+}
+
+.menu {
+  display: none;
+}
+
+.cardsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animatedCards {
+  position: relative;
+  margin-top: -60px;
+  margin-left: -100px;
+}
+
+@media (max-width: 768px) {
+  .linkedinLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .animatedCards {
+    margin-top: -40px;
+    margin-left: -80px;
+  }
+
+  .presentation {
+    padding-left: 15px;
+    height: 532px;
+  }
+
+  .menu {
+    display: block;
+    margin-right: 15px;
+  }
+
+  .bigBlackEllipseLayout {
+    top: 14vh;
+    left: 10vh;
+  }
+
+  .bigBlackEllipse {
+    width: 48px;
+    height: 48px;
+  }
+
+  .bigWhiteEllipseLayout {
+    top: 16vh;
+    left: 34vh;
+  }
+
+  .bigWhiteEllipse {
+    width: 48px;
+    height: 48px;
+  }
+
+  .smallBlackEllipseLayout {
+    top: 8vh;
+    left: 42vh;
+  }
+
+  .smallWhiteEllipseLayout {
+    top: 12vh;
+    left: 12vh;
+  }
+
+
+  .smallBlackEllipse {
+    width: 28px;
+    height: 28px;
+  }
+
+  .smallWhiteEllipse {
+    width: 28px;
+    height: 28px;
+  }
+
+  .blackCardLayout {
+    left: 14%;
+    transform: translateX(-50%);
+    margin-top: 0;
+  }
+
+  .whiteCardLayout {
+    left: 18%;
+    transform: translateX(-50%);
+    margin-top: 0;
+  }
+
+  .card {
+    width: 304px;
+    height: 318px;
   }
 }

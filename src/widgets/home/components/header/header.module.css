@@ -1,4 +1,13 @@
 .homeHeader {
   height: 882px;
   display: flex;
+  position: relative;
+  background-color: #F85C3A;
+}
+
+@media (max-width: 768px) {
+  .homeHeader {
+    flex-direction: column;
+    height: 100%;
+  }
 }

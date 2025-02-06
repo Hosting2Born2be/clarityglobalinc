@@ -7,6 +7,10 @@
   border-radius: 6px;
 }
 
+.title {
+  white-space: nowrap;
+}
+
 .layout {
   margin-top: 114px;
   display: flex;
@@ -20,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 35px;
   margin-top: 60px;
   margin-bottom: 200px;
@@ -51,4 +56,10 @@
 
 .cardDescContainer {
   width: 280px;
+}
+
+@media (max-width: 768px) {
+  .cardLayout {
+    margin-bottom: 120px;
+  }
 }

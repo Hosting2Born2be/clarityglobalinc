@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .offerCard {
@@ -50,4 +51,10 @@
   height: 20px;
   background-color: #F85C3A;
   border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .offersLayout {
+    margin: 55px 0;
+  }
 }

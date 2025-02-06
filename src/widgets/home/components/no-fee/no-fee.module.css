@@ -23,3 +23,9 @@
     background-size: contain;
   }
 }
+
+@media (max-width: 768px) {
+  .text {
+    margin: 0 16px;
+  }
+}

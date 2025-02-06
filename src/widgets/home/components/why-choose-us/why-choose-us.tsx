@@ -40,14 +40,7 @@ export function WhyChooseUs() {
           Managing money never was so easy and convenient.
         </Title>
         <Divider />
-        <div
-          style={{
-            marginTop: '76px',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '52px 107px',
-          }}
-        >
+        <div className={st.optionsList}>
           {options.map(({ title, description }) => (
             <Option key={title} title={title} description={description} />
           ))}

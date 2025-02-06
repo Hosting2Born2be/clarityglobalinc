@@ -13,3 +13,9 @@
   margin-top: 15px;
   margin-bottom: 25px;
 }
+@media (max-width: 768px) {
+  .currencyConverterContainer {
+    padding: 20px 24px;
+    width: 100%;
+  }
+}
