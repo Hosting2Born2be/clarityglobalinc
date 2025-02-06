@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { CurrencyConverter } from '@/features/currency-converter';
 
 import { cn } from '@/shared/lib/styles';
@@ -22,7 +24,7 @@ export function CalculatorDemo() {
             <SupportUkraine />
           </Link>
           <Button variant="transparent">Login</Button>
-          <Button variant="white">Sign Up</Button>
+          <SignUpDialog trigger={<Button variant="white">Sign Up</Button>} />
         </div>
         <FourDots />
       </div>

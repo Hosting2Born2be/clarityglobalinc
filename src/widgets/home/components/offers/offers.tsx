@@ -1,5 +1,7 @@
 'use client';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -24,9 +26,13 @@ export function Offers() {
           <OfferCard key={offer} value={offer} />
         ))}
       </div>
-      <Button variant="orange" size="md">
-        Try now
-      </Button>
+      <SignUpDialog
+        trigger={
+          <Button variant="orange" size="md">
+            Try now
+          </Button>
+        }
+      />
     </section>
   );
 }

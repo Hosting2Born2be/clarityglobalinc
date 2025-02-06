@@ -1,6 +1,7 @@
 export * from './arrow-down';
 export * from './canada';
 export * from './china';
+export * from './close';
 export * from './equal';
 export * from './facebook';
 export * from './four-dots';

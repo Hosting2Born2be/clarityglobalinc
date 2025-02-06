@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { useForm, zodResolver } from '@/shared/lib/forms';
 import { isEqual } from '@/shared/lib/objects';
 import { Button } from '@/shared/ui/kit/button';
@@ -77,9 +79,13 @@ export function CurrencyConverter() {
       <Text size="sm" className={st.arriveHint}>
         Should arrive in 1-3 business days.
       </Text>
-      <Button variant="orange" type="button" fullWidth>
-        Sign Up
-      </Button>
+      <SignUpDialog
+        trigger={
+          <Button variant="orange" type="button" fullWidth>
+            Sign Up
+          </Button>
+        }
+      />
     </form>
   );
 }

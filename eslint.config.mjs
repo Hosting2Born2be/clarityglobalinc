@@ -22,6 +22,8 @@ const eslintConfig = [
         {
           groups: [
             ['^react', '^next', '^@?\\w'],
+            ['^@/core'],
+            ['^@/widgets'],
             ['^@/features'],
             ['^$'],
             ['^@/shared'],
@@ -30,6 +32,7 @@ const eslintConfig = [
         },
       ],
       'simple-import-sort/exports': 'error',
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
 ];

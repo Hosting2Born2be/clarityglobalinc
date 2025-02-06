@@ -1,5 +1,7 @@
 'use client';
 
+import { SignUpDialog } from '@/core/auth/components';
+
 import { cn } from '@/shared/lib/styles';
 import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
@@ -31,9 +33,13 @@ export function SimpleSteps() {
         <Title level={3} className={st.title}>
           To get started, follow three simple steps:
         </Title>
-        <Button size="md" variant="orange">
-          Open a Free Account
-        </Button>
+        <SignUpDialog
+          trigger={
+            <Button size="md" variant="orange">
+              Open a Free Account
+            </Button>
+          }
+        />
       </section>
       <section className={st.cards}>
         {steps.map(({ title, description }, index) => (

@@ -40,6 +40,17 @@
   }
 }
 
+.orangeOutlineButton {
+  background-color: transparent;
+  border: 1px solid #F85C3A;
+  color: #F85C3A;
+
+  &:hover {
+    background: #F85C3A;
+    color: #FFFFFF;
+  }
+}
+
 .fullWidth {
   width: 100%;
 }
