@@ -48,6 +48,7 @@
   color: #2D2D2D;
   font-size: 0.75rem;
   padding-right: 4px;
+  flex-shrink: 0;
 }
 
 .content {

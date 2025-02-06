@@ -39,7 +39,9 @@ export function CompactAccordion({
       <Item className={st.item} value="item-1">
         <Header className={st.header}>
           <Trigger className={st.trigger}>{trigger}</Trigger>
-          <ArrowDown />
+          <span className={st.arrowIcon}>
+            <ArrowDown />
+          </span>
         </Header>
         <Content className={st.content}>
           <div className={contentClasses}>{content}</div>

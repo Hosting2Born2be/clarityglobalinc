@@ -11,6 +11,7 @@ export function Button({
   onSubmit,
   onClick,
   size,
+  className,
   variant = 'transparent',
   fullWidth = false,
   type = 'button',
@@ -21,16 +22,21 @@ export function Button({
   fullWidth?: boolean;
   onSubmit?: FormEventHandler<HTMLButtonElement>;
   onClick?: () => void;
+  className?: string;
   size?: 'md';
 }) {
-  const btnClasses = cn(st.button, {
-    [st.whiteButton]: variant === 'white',
-    [st.transparentButton]: variant === 'transparent',
-    [st.orangeButton]: variant === 'orange',
-    [st.orangeOutlineButton]: variant === 'orangeOutline',
-    [st.fullWidth]: fullWidth,
-    [st.mediumSize]: size === 'md',
-  });
+  const btnClasses = cn(
+    st.button,
+    {
+      [st.whiteButton]: variant === 'white',
+      [st.transparentButton]: variant === 'transparent',
+      [st.orangeButton]: variant === 'orange',
+      [st.orangeOutlineButton]: variant === 'orangeOutline',
+      [st.fullWidth]: fullWidth,
+      [st.mediumSize]: size === 'md',
+    },
+    className,
+  );
 
   return (
     <button

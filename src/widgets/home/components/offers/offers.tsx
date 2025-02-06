@@ -28,7 +28,7 @@ export function Offers() {
       </div>
       <SignUpDialog
         trigger={
-          <Button variant="orange" size="md">
+          <Button variant="orange" size="md" className={st.button}>
             Try now
           </Button>
         }

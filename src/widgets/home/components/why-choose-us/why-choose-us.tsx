@@ -36,7 +36,7 @@ export function WhyChooseUs() {
     <section className={st.layout}>
       <section className={st.bannerLayout}>
         <Tag>WHY CHOOSE US?</Tag>
-        <Title level={1}>
+        <Title level={1} className={st.title}>
           Managing money never was so easy and convenient.
         </Title>
         <Divider />

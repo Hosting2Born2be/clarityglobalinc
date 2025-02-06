@@ -38,7 +38,9 @@ export function WideAccordion({
               <Divider />
             </div>
             <div className={st.triggerIcon}>
-              <ArrowDown height="14" width="14" color="#FFFFFF" />
+              <span className={st.arrowIcon}>
+                <ArrowDown height="14" width="14" color="#FFFFFF" />
+              </span>
             </div>
           </Trigger>
         </Header>

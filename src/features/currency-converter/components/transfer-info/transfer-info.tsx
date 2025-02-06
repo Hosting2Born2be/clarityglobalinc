@@ -32,7 +32,7 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
         <div className={st.accordionWrapper}>
           <Accordion
             trigger={
-              <Text weight={600} size="sm">
+              <Text weight={600} size="sm" className={st.text}>
                 Fast transfer fee
               </Text>
             }
@@ -69,7 +69,7 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
           </Text>
         </div>
         <Divider />
-        <Text weight={600} size="sm">
+        <Text weight={600} size="sm" className={st.text}>
           Total amount we’ll convert
         </Text>
       </div>
@@ -83,7 +83,7 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
           </Text>
         </div>
         <Divider />
-        <Text weight={600} size="sm">
+        <Text weight={600} size="sm" className={st.text}>
           Guaranteed rate (50h)
         </Text>
       </div>

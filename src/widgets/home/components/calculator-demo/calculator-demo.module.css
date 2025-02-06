@@ -25,7 +25,7 @@
   gap: 70px;
   margin-left: 40px;
 
-  div {
+  .quickActions {
     display: flex;
     align-items: center;
     gap: 20px;
