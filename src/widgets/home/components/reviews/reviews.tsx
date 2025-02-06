@@ -1,13 +1,12 @@
 'use client';
 
-import { JSX } from 'react';
+import { reviews } from '@/widgets/home/components/reviews/data';
 
 import { Slider } from '@/shared/ui/components/slider';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './reviews.module.css';
-import { reviews } from '@/widgets/home/components/reviews/data';
 
 export function Reviews() {
   const slides = reviews.map(({ name, review, country, Icon }) => (
