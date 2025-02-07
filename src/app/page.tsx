@@ -1,14 +1,12 @@
+import { Faq, KnowMore, Reviews } from '@/widgets/common/components';
 import {
   AsSimple,
   CanYouDo,
-  Faq,
   GetFreeAccount,
   Header,
-  KnowMore,
   NoFee,
   Offers,
   OurValues,
-  Reviews,
   SimpleSteps,
   WhyChooseUs,
 } from '@/widgets/home/components';

@@ -15,7 +15,9 @@ import st from './header.module.css';
 export function Header() {
   return (
     <header className={st.headerActions}>
-      <Image src="/full-logo.svg" alt="full-logo" width="188" height="36" />
+      <Link href="/">
+        <Image src="/full-logo.svg" alt="full-logo" width="188" height="36" />
+      </Link>
       <section className={st.burgerMenu}>
         <div className={st.quickActions}>
           <Link href="https://savelife.in.ua/en/">
