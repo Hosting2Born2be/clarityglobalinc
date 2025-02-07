@@ -1,15 +1,8 @@
 'use client';
 
-import Link from 'next/link';
-
-import { SignUpDialog } from '@/core/auth/components';
-
-import { BurgerMenu } from '@/features/burger-menu';
 import { CurrencyConverter } from '@/features/currency-converter';
 
 import { cn } from '@/shared/lib/styles';
-import { SupportUkraine } from '@/shared/ui/icons';
-import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
@@ -19,18 +12,6 @@ import st from './calculator-demo.module.css';
 export function CalculatorDemo() {
   return (
     <section className={cn(st.calculatorDemo, mainSt.headerSection)}>
-      <div className={st.headerActions}>
-        <div className={st.quickActions}>
-          <Link href="https://savelife.in.ua/en/">
-            <SupportUkraine />
-          </Link>
-          <Button variant="transparent">Login</Button>
-          <SignUpDialog trigger={<Button variant="white">Sign Up</Button>} />
-        </div>
-        <span className={st.menu}>
-          <BurgerMenu />
-        </span>
-      </div>
       <div className={mainSt.contentContainer}>
         <Title weight={600} color="white">
           Global money transfer

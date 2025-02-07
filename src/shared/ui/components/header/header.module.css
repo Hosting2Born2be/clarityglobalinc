@@ -1,0 +1,35 @@
+.headerActions {
+  display: flex;
+  top: 30px;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  padding: 0 165px;
+  width: 100%;
+  z-index: 30;
+
+  .burgerMenu {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .quickActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .headerActions {
+    padding: 0 15px;
+
+    .quickActions {
+      display: none;
+    }
+  }
+}

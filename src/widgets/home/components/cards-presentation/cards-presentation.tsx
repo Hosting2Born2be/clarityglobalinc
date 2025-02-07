@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 import { AnimationsMeta } from '@/widgets/home/types/animations';
 
-import { BurgerMenu } from '@/features/burger-menu';
-
 import { motion } from '@/shared/lib/motion';
 import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
@@ -36,12 +34,6 @@ export function CardsPresentation({
 
   return (
     <section className={cn(st.presentation, mainSt.headerSection)}>
-      <div className={st.cardsHeader}>
-        <Image src="/full-logo.svg" alt="full-logo" width="188" height="36" />
-        <span className={st.menu}>
-          <BurgerMenu />
-        </span>
-      </div>
       <div className={mainSt.contentContainer}>
         <Title weight={600} color="white">
           Smart electronic money
