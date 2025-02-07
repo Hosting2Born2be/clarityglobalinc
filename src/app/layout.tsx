@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   title: 'Payment transferring services | Clarity Global Inc',
   description:
     'Make transactions with your payments with Clarity Global Inc safely! Send and receive money worldwide in any currency to 180 countries.',
+  robots: 'noindex, nofollow',
 };
 
 export default function RootLayout({
