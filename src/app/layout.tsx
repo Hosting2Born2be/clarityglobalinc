@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
 import { Footer } from '@/shared/ui/components/footer';
+import { Header } from '@/shared/ui/components/header';
 
 import './globals.css';
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         className={montserrat.className}
         style={{ overflowX: 'hidden', touchAction: 'pan-y' }}
       >
+        <Header />
         {children}
         <Footer />
       </body>
