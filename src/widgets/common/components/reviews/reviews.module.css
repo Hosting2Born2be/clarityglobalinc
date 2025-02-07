@@ -4,13 +4,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 
 .title {
   margin-bottom: 67px;
 }
 
+.backquotes {
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  background-color: #FFFFFF;
+  padding: 4px;
+  z-index: 10;
+}
+
 .card {
+  position: relative;
   width: 80%;
   min-height: 206px;
   border-radius: 20px;

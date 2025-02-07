@@ -23,22 +23,22 @@ import st from './burger-menu.module.css';
 
 const navigationMain = [
   { title: 'Home', href: '/' },
-  { title: 'Send', href: '#' },
-  { title: 'Receive', href: '#' },
-  { title: 'Unique offer', href: '#' },
-  { title: 'Funds Safety', href: '#' },
-  { title: 'Acceptance Guidelines', href: '#' },
-  { title: 'Referral partner program', href: '#' },
+  { title: 'Send', href: '/send' },
+  { title: 'Receive', href: '/receive' },
+  { title: 'Unique offer', href: '/unique-offers' },
+  { title: 'Funds Safety', href: '/funds-safety' },
+  { title: 'Acceptance Guidelines', href: '/acceptance-guidelines' },
+  { title: 'Referral partner program', href: '/referral-partner-program' },
 ];
 
 const navigationSecondary = [
-  { title: 'Virtual cards services', href: '#' },
-  { title: 'Exchange rates', href: '#' },
-  { title: 'Newsletter', href: '#' },
-  { title: 'About us', href: '#' },
-  { title: 'Faq', href: '#' },
-  { title: 'Help', href: '#' },
-  { title: 'Contact Us', href: '#' },
+  { title: 'Virtual cards services', href: '/virtual-cards-services' },
+  { title: 'Exchange rates', href: '/exchange-rates' },
+  { title: 'Newsletter', href: '/newsletter' },
+  { title: 'About us', href: '/about-us' },
+  { title: 'Faq', href: '/faq' },
+  { title: 'Help', href: '/help' },
+  { title: 'Contact Us', href: '/contact-us' },
 ];
 
 export function BurgerMenu() {

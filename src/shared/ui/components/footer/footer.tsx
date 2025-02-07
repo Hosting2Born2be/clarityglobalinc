@@ -103,6 +103,7 @@ export function Footer() {
               Menu
             </Text>
             <Navigation href="/">Home</Navigation>
+            <Navigation href="/send">Send</Navigation>
             <Navigation href="/receive">Receive</Navigation>
             <Navigation href="/unique-offer">Unique offer</Navigation>
             <Navigation href="/about-us">About us</Navigation>

@@ -1,11 +1,10 @@
 'use client';
 
-import { reviews } from '@/widgets/home/components/reviews/data';
-
 import { Slider } from '@/shared/ui/components/slider';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
+import { reviews } from './data';
 import st from './reviews.module.css';
 
 export function Reviews() {

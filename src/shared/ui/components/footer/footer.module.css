@@ -1,6 +1,7 @@
 .layout {
   padding: 68px 165px 28px 165px;
   background-color: #2D2D2D;
+  z-index: 30;
 }
 
 .logo {
