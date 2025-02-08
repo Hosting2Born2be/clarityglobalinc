@@ -44,3 +44,49 @@
   top: 0;
   left: 0;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 0;
+    padding-top: 150px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .iphone {
+    position: relative;
+    bottom: 20px;
+    right: 0;
+    margin-top: 50px;
+  }
+
+  .ellipseLg {
+    width: 82px;
+    height: 82px;
+  }
+
+  .ellipseMd {
+    width: 52px;
+    height: 52px;
+  }
+
+  .iphoneImg {
+    width: 150px;
+    height: 300px;
+  }
+
+  .ellipseSm {
+    display: none;
+  }
+
+}
