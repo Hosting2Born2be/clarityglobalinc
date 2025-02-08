@@ -2,30 +2,23 @@
 
 import Image from 'next/image';
 
-import { motion, useMotionValue, useTransform } from '@/shared/lib/motion';
+import { useCardsMove } from '@/widgets/home/hooks/use-cards-move';
+
+import { motion } from '@/shared/lib/motion';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './header.module.css';
 
 export function Header() {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const moveSmEllipseX = useTransform(x, [100, -100], [20, 60]);
-  const moveSmEllipseY = useTransform(y, [100, -100], [20, 60]);
-  const moveBigBlackEllipseX = useTransform(x, [100, -100], [-20, 80]);
-  const moveBigBlackEllipseY = useTransform(y, [100, -100], [-20, 80]);
-  const moveSmallWhiteEllipseX = useTransform(x, [-100, 100], [-20, 40]);
-  const moveSmallWhiteEllipseY = useTransform(y, [-100, 100], [-20, 40]);
-
-  const onMouseMove = (e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-
-    x.set((clientX - centerX) / 10);
-    y.set((clientY - centerY) / 10);
-  };
+  const {
+    moveBigWhiteEllipseX,
+    moveBigWhiteEllipseY,
+    moveBigBlackEllipseX,
+    moveBigBlackEllipseY,
+    moveSmallWhiteEllipseX,
+    moveSmallWhiteEllipseY,
+    onMouseMove,
+  } = useCardsMove();
 
   return (
     <header className={st.header} onMouseMove={onMouseMove}>
@@ -45,9 +38,9 @@ export function Header() {
           style={{
             position: 'absolute',
             left: '-120px',
-            x: moveSmEllipseX,
-            y: moveSmEllipseY,
-            zIndex: 1, // ниже iPhone
+            x: moveBigWhiteEllipseX,
+            y: moveBigWhiteEllipseY,
+            zIndex: 1,
           }}
         >
           <Image
@@ -59,7 +52,6 @@ export function Header() {
           />
         </motion.div>
         <motion.div
-          className={st.bigBlackEllipseLayout}
           style={{
             position: 'absolute',
             right: '-70px',
@@ -70,6 +62,7 @@ export function Header() {
           }}
         >
           <Image
+            className={st.ellipseMd}
             src="/ellipse-md.svg"
             alt="ellipse-md"
             width={82}
@@ -87,7 +80,7 @@ export function Header() {
           }}
         >
           <Image
-            className={st.smallWhiteEllipse}
+            className={st.ellipseLg}
             src="/ellipse-lg.svg"
             alt="ellipse-lg"
             width={122}
@@ -101,6 +94,7 @@ export function Header() {
           }}
         >
           <Image
+            className={st.iphoneImg}
             src="/clarity-iphone.svg"
             alt="iphone"
             width={315}
