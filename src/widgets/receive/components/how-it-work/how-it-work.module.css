@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  margin: 200px 165px 0 165px;
+}
+
+.textSize {
+  font-size: 1.25rem;
+}
+
+.infoLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 100px 15px 15px 0;
+    gap: 25px;
+  }
+
+  .infoLayout {
+    width: 90%;
+  }
+
+  .textSize {
+    font-size: 1rem;
+  }
+}

@@ -7,9 +7,13 @@ import { useCardsMove } from '@/widgets/home/hooks/use-cards-move';
 import { motion } from '@/shared/lib/motion';
 import { Title } from '@/shared/ui/kit/title';
 
-import st from './header.module.css';
+import st from './header-with-gadget.module.css';
 
-export function Header() {
+export function HeaderWithGadget({
+  type = 'iphone',
+}: {
+  type?: 'iphone' | 'ipad';
+}) {
   const {
     moveBigWhiteEllipseX,
     moveBigWhiteEllipseY,
@@ -24,13 +28,15 @@ export function Header() {
     <header className={st.header} onMouseMove={onMouseMove}>
       <section className={st.info}>
         <Title level={1} weight={600} color="white">
-          Send your payments
+          {type === 'iphone' ? 'Send money online' : 'Receive payments online'}
         </Title>
         <Title level={1} weight={300} color="white">
-          quickly and securely.
+          {type === 'iphone' ? 'quickly and securely.' : 'from 180 countries.'}
         </Title>
         <Title level={5} weight={400} color="white" className={st.text}>
-          Get a better exchange rate and avoid excessive bank fees.
+          {type === 'iphone'
+            ? 'Get a better exchange rate and avoid excessive bank fees.'
+            : 'Without visiting the bank — quickly and efficiently.'}
         </Title>
       </section>
       <motion.div className={st.iphone}>
@@ -93,13 +99,23 @@ export function Header() {
             zIndex: 10,
           }}
         >
-          <Image
-            className={st.iphoneImg}
-            src="/clarity-iphone.svg"
-            alt="iphone"
-            width={315}
-            height={635}
-          />
+          {type === 'iphone' ? (
+            <Image
+              className={st.iphoneImg}
+              src="/clarity-iphone.svg"
+              alt="iphone"
+              width={315}
+              height={635}
+            />
+          ) : (
+            <Image
+              className={st.ipadImg}
+              src="/clarity-ipad.svg"
+              alt="iphone"
+              width={518}
+              height={658}
+            />
+          )}
         </div>
       </motion.div>
     </header>

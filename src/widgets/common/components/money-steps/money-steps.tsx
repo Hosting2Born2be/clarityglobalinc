@@ -3,31 +3,19 @@
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-import st from './payment-steps.module.css';
+import st from './money-steps.module.css';
 
-const steps = [
-  {
-    title: 'Sign up for your account',
-    description:
-      'First, register. Then log in to your account and enter your card or bank details.',
-  },
-  {
-    title: 'Get your account approved',
-    description:
-      'Submit all the required documents according to the KYC process to start enjoying Clarity Global services.',
-  },
-  {
-    title: 'Send money',
-    description:
-      'Log into your account and start the process of transferring payments.',
-  },
-];
-
-export function PaymentSteps() {
+export function MoneySteps({
+  title,
+  steps,
+}: {
+  title: string;
+  steps: { title: string; description: string }[];
+}) {
   return (
     <section className={st.layout}>
       <Title level={3} className={st.titleLayout}>
-        To send payment, follow three simple steps:
+        {title}
       </Title>
       <section className={st.stepsLayout}>
         <div className={st.cards}>
