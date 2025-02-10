@@ -1,0 +1,71 @@
+.layout {
+  height: 700px;
+  background-color: #F85C3A;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 165px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./rectangles.svg') no-repeat right center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.title {
+  width: 60%;
+}
+
+.ellipseSm {
+  position: absolute;
+  right: 350px;
+  top: -300px;
+}
+
+.ellipseMd {
+  position: absolute;
+  right: 170px;
+  top: -220px;
+}
+
+.ellipseLg {
+  position: absolute;
+  right: 250px;
+  bottom: -170px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 150px 15px;
+    justify-content: start;
+    height: 600px;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .ellipseSm {
+    right: 200px;
+    top: 200px;
+  }
+
+  .ellipseMd {
+    top: 50px;
+    right: 50px;
+  }
+
+  .ellipseLgImg {
+    width: 107px;
+    height: 107px;
+  }
+}
