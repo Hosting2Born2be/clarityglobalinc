@@ -1,0 +1,9 @@
+.layout {
+  margin-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin-bottom: 70px;
+  }
+}

@@ -1,12 +1,12 @@
 import {
   Faq,
   HeaderWithGadget,
+  HowItWork,
   MoneySteps,
   Reviews,
   SignUpBanner,
   WhyChoose,
 } from '@/widgets/common/components';
-import { HowItWork } from '@/widgets/receive/components';
 import { KnowMore } from '@/widgets/send/components';
 
 const receiveSteps = [
