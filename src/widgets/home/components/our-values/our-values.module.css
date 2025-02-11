@@ -58,7 +58,7 @@
   width: 280px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .cardLayout {
     margin-bottom: 120px;
   }

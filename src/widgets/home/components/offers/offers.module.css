@@ -53,7 +53,7 @@
   border-radius: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .offersLayout {
     margin: 55px 0;
   }
