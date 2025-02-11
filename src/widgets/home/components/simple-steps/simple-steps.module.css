@@ -75,7 +75,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .layout {
     padding: 50px 15px;
   }

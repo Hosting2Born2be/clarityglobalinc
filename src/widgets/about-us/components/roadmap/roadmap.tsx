@@ -69,7 +69,7 @@ function RoadmapCard({
           ? index % 2 === 0
             ? 'row'
             : 'row-reverse'
-          : undefined,
+          : 'initial',
       }}
     >
       <section className={st.cardInfo}>

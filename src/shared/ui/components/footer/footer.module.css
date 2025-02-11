@@ -7,7 +7,7 @@
 .logo {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   gap: 45px;
 }
 
@@ -15,17 +15,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .companyText {
-  width: 500px;
+  width: 100%;
 }
 
 .socialsLayout {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-shrink: 0;
   gap: 20px;
 }
 
@@ -94,7 +94,13 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1340px) {
+  .companyInfoLayout {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
   .logoLink {
     margin-left: -8px;
   }

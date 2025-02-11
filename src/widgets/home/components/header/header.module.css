@@ -5,9 +5,17 @@
   background-color: #F85C3A;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .homeHeader {
     flex-direction: column;
+    text-align: center;
     height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeHeader {
+    text-align: left;
   }
 }
