@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 
+import { useWindowSize } from '@/shared/lib/hooks';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
@@ -31,13 +32,8 @@ const roadmap = [
 ];
 
 export function Roadmap() {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1280);
-
-  useEffect(() => {
-    const handleResize = () => setIsLargeScreen(window.innerWidth > 1280);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const { width } = useWindowSize();
+  const isLargeScreen = useMemo(() => width > 1280, [width]);
 
   return (
     <section className={st.layout}>
