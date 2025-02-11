@@ -11,6 +11,8 @@ export * from './lithuania';
 export * from './minus';
 export * from './multiply';
 export * from './poland';
+export * from './segal-logo';
+export * from './stikeman-logo';
 export * from './support-ukraine';
 export * from './telegram';
 export * from './uk';
