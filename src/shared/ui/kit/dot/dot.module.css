@@ -1,0 +1,18 @@
+.dot {
+  background-color: #F85C3A;
+  border-radius: 100%;
+  position: relative;
+  flex-shrink: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+  }
+}
