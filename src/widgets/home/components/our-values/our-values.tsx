@@ -52,7 +52,7 @@ function ValueCard({
       <Title level={5} weight={600}>
         {title}
       </Title>
-      <Text size="base" weight={400} className={st.cardDescContainer}>
+      <Text size="sm" weight={400} className={st.cardDescContainer}>
         {description}
       </Text>
     </article>

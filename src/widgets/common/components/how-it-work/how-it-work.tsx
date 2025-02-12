@@ -12,7 +12,7 @@ export function HowItWork() {
         <Title level={1} weight={600}>
           Registering with Clarity Global Inc couldn’t be simpler.
         </Title>
-        <Text className={st.textSize}>
+        <Text size="lg">
           Our service is comprised of favourable exchange rates and fantastic
           customer service. Every transfer is important to us, and we want to
           build lasting relationships with every client. Also, our team of

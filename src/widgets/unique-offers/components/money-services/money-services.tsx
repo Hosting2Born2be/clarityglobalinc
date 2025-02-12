@@ -45,7 +45,7 @@ function Service({ title, list }: { title: string; list?: string[] }) {
   return (
     <article className={st.listItem}>
       <GreenDivider />
-      <Text size="lg" className={st.textList} weight={400}>
+      <Text size="base" className={st.textList} weight={400}>
         {title}
       </Text>
       {list?.length ? (
@@ -62,7 +62,7 @@ function Service({ title, list }: { title: string; list?: string[] }) {
               key={item}
               style={{ listStyleType: 'disc', marginLeft: '20px' }}
             >
-              <Text size="lg" weight={400}>
+              <Text size="base" weight={400}>
                 {item}
               </Text>
             </li>

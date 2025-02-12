@@ -14,7 +14,7 @@ export function Text({
   children: React.ReactNode;
   weight?: 300 | 400 | 500 | 600 | 700;
   color?: 'black' | 'white' | 'red' | 'grey';
-  size?: 'sm' | 'base' | 'lg' | 'xl';
+  size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
   className?: string;
 }) {
   const textClasses = cn(st.text, {
@@ -31,6 +31,7 @@ export function Text({
     [st.sizeLarge]: size === 'lg',
     [st.sizeBase]: size === 'base',
     [st.sizeSmall]: size === 'sm',
+    [st.sizeExtraSmall]: size === 'xs',
   });
 
   return <p className={cn(textClasses, className)}>{children}</p>;

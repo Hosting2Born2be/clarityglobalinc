@@ -66,10 +66,10 @@ export function Option({
     <article className={st.optionsLayout}>
       <div className={st.optionDot} />
       <div className={st.option}>
-        <Text size="lg" weight={600}>
+        <Text size="base" weight={600}>
           {title.toUpperCase()}
         </Text>
-        <Text size="lg" weight={300}>
+        <Text size="base" weight={300}>
           {description}
         </Text>
       </div>

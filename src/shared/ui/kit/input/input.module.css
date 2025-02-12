@@ -4,6 +4,7 @@
   border: none;
   outline: none;
   font-size: 0.875rem;
+  font-family: Montserrat, Montserrat Fallback, sans-serif;
 }
 
 .inputContainer {

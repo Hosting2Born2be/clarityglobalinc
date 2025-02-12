@@ -24,7 +24,7 @@ export function Footer() {
           <Link href="https://clarityglobalinc.com/" className={st.logoLink}>
             <Image src="/full-logo.svg" alt="logo" width={183} height={33} />
           </Link>
-          <Text size="sm" color="grey" className={st.companyText}>
+          <Text size="xs" color="grey" className={st.companyText}>
             Сlarity Global Inc is owned, operated, and managed by Clarity Global
             Inc, a Canadian company registered with FINTRAC, Registration #
             M22927420.
@@ -56,10 +56,10 @@ export function Footer() {
             >
               <Linkedin />
               <div>
-                <Text size="sm" color="grey" weight={700}>
+                <Text size="xs" color="grey" weight={700}>
                   Clarity Global Inc
                 </Text>
-                <Text size="sm" color="grey">
+                <Text size="xs" color="grey">
                   Company Profile
                 </Text>
               </div>
@@ -67,10 +67,10 @@ export function Footer() {
             <Link className={st.linkedin} href="#" target="_blank">
               <Linkedin />
               <div>
-                <Text size="sm" color="grey" weight={700}>
+                <Text size="xs" color="grey" weight={700}>
                   Svitlana Koval
                 </Text>
-                <Text size="sm" color="grey">
+                <Text size="xs" color="grey">
                   Chief Accountant
                 </Text>
               </div>
@@ -81,25 +81,25 @@ export function Footer() {
       <Divider className={st.divider} />
       <section className={st.menu}>
         <div className={st.column}>
-          <Text size="lg" color="white" weight={600}>
+          <Text size="base" color="white" weight={600}>
             Office
           </Text>
           <Navigation href="mailto:info@clarityglobalinc.com">
             info@clarityglobalinc.com
           </Navigation>
           <Navigation href="tel:+14378873911">+14378873911</Navigation>
-          <Text size="lg" color="grey" weight={300} className={st.address}>
+          <Text size="sm" color="grey" weight={300} className={st.address}>
             Registered address: 125-9th Avenue Southeast, Suite 2000, Calgary,
             Alberta, T2P0P6
           </Text>
-          <Text size="lg" color="grey" weight={300} className={st.address}>
+          <Text size="sm" color="grey" weight={300} className={st.address}>
             Operational address: 3080 Yonge Street, Suite 6060, Toronto, Ontario
             M4N 3N, Canada
           </Text>
         </div>
         <div className={st.navMenu}>
           <div className={st.column}>
-            <Text size="lg" color="white" weight={600}>
+            <Text size="base" color="white" weight={600}>
               Menu
             </Text>
             <Navigation href="/">Home</Navigation>
@@ -133,7 +133,7 @@ export function Footer() {
           </div>
         </div>
         <div className={st.column}>
-          <Text size="lg" color="white" weight={600}>
+          <Text size="base" color="white" weight={600}>
             Legal
           </Text>
           <Navigation href="/terms-of-use">Terms of Use</Navigation>

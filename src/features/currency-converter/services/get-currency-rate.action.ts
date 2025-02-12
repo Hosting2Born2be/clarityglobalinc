@@ -2,10 +2,12 @@
 
 import axios from 'axios';
 
-import { CurrencyDTO } from '../lib/types';
+import {
+  OPEN_CHANGE_RATE_API_KEY,
+  OPEN_CHANGE_RATE_URL,
+} from '@/shared/config/env';
 
-const OPEN_CHANGE_RATE_URL = process.env.OPEN_CHANGE_RATE_API_URL ?? '';
-const OPEN_CHANGE_RATE_API_KEY = process.env.OPEN_CHANGE_RATE_API_KEY ?? '';
+import { CurrencyDTO } from '../lib/types';
 
 const calculateFee = ({
   fee,

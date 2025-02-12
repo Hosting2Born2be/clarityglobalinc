@@ -1,0 +1,22 @@
+.inputEl {
+  border-radius: 0 !important;
+  border-width: 0 !important;
+  background: transparent !important;
+  width: 100% !important;
+}
+
+.container {
+  border: 1px solid #DCDCDC !important;
+  border-radius: 62px;
+  background: #FFF !important;
+  padding: 4px 6px;
+}
+
+.button {
+  background: transparent !important;
+  border: none !important;
+}
+
+.flag-dropdown .open {
+  background: transparent !important;
+}

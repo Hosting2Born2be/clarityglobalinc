@@ -1,0 +1,8 @@
+.link {
+  color: #F85C3A;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

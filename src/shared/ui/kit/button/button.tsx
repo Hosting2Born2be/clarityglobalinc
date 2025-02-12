@@ -15,6 +15,7 @@ export function Button({
   variant = 'transparent',
   fullWidth = false,
   type = 'button',
+  disabled = false,
 }: {
   children: React.ReactNode;
   variant?: 'white' | 'transparent' | 'orange' | 'orangeOutline';
@@ -24,6 +25,7 @@ export function Button({
   onClick?: () => void;
   className?: string;
   size?: 'md';
+  disabled?: boolean;
 }) {
   const btnClasses = cn(
     st.button,
@@ -44,6 +46,7 @@ export function Button({
       onSubmit={onSubmit}
       onClick={onClick}
       type={type}
+      disabled={disabled}
     >
       {children}
     </button>

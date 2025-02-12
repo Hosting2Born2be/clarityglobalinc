@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
+import { ToastContainer } from '@/shared/lib/notify';
 import { Footer } from '@/shared/ui/components/footer';
 import { Header } from '@/shared/ui/components/header';
 
@@ -32,6 +33,12 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ToastContainer
+          position="bottom-left"
+          theme="light"
+          className={montserrat.className}
+          style={{ whiteSpace: 'preLine' }}
+        />
       </body>
     </html>
   );

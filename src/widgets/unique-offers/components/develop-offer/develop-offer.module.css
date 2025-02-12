@@ -53,7 +53,6 @@
 
 .offerValue {
   flex-shrink: 0;
-  font-size: 1.25rem;
 }
 
 .topDivider {
@@ -72,7 +71,6 @@
 
   .offerValue {
     flex-shrink: 1;
-    font-size: 0.875rem;
     text-align: right;
   }
 

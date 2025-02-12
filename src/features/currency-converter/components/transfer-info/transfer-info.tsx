@@ -22,7 +22,7 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
           <div className={st.icon}>
             <MinusIcon />
           </div>
-          <Text weight={600} size="sm">
+          <Text weight={600} size="xs">
             {fee}
           </Text>
         </div>
@@ -32,7 +32,7 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
         <div className={st.accordionWrapper}>
           <Accordion
             trigger={
-              <Text weight={600} size="sm" className={st.text}>
+              <Text weight={600} size="xs" className={st.text}>
                 Fast transfer fee
               </Text>
             }
@@ -64,12 +64,12 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
           <div className={st.icon}>
             <EqualIcon />
           </div>
-          <Text weight={600} size="sm">
+          <Text weight={600} size="xs">
             {convertedAmount}
           </Text>
         </div>
         <Divider />
-        <Text weight={600} size="sm" className={st.text}>
+        <Text weight={600} size="xs" className={st.text}>
           Total amount we’ll convert
         </Text>
       </div>
@@ -78,12 +78,12 @@ export function TransferInfo({ control }: { control?: Control<CurrencyDTO> }) {
           <div className={st.icon}>
             <MultiplyIcon />
           </div>
-          <Text weight={600} size="sm">
+          <Text weight={600} size="xs">
             {rate}
           </Text>
         </div>
         <Divider />
-        <Text weight={600} size="sm" className={st.text}>
+        <Text weight={600} size="xs" className={st.text}>
           Guaranteed rate (50h)
         </Text>
       </div>
