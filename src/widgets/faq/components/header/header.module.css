@@ -17,7 +17,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: url('./rectangles.png') no-repeat right center;
+    background: url('./rectangles.png') no-repeat right bottom;
     background-size: contain;
     z-index: -1;
   }
@@ -25,4 +25,93 @@
 
 .text {
   width: 60%;
+}
+
+.ellipseSection {
+  position: relative;
+}
+
+.ellipseXs {
+  z-index: 1;
+  position: absolute;
+  right: 650px;
+}
+
+.ellipseSm {
+  z-index: 1;
+  position: absolute;
+  right: 350px;
+  top: 50px;
+}
+
+.ellipseMd {
+  z-index: 1;
+  position: absolute;
+  right: 100px;
+  top: -200px;
+}
+
+.ellipseLg {
+  z-index: 1;
+  position: absolute;
+  right: 350px;
+  top: -200px;
+}
+
+.ellipseXl {
+  z-index: 1;
+  position: absolute;
+  right: 120px;
+  top: -50px;
+}
+
+@media (max-width: 1465px) {
+  .ellipseLg {
+    right: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    padding: 80px 15px 0 15px;
+    height: 500px;
+    gap: 26px;
+  }
+
+  .ellipseLg {
+    top: -300px;
+  }
+
+  .ellipseMd {
+    right: 50px;
+  }
+
+  .ellipseXl {
+    right: 100px;
+    top: -150px;
+  }
+
+  .ellipseSm {
+    top: -100px;
+  }
+
+  .ellipseXs {
+    right: 500px;
+  }
+}
+
+@media (max-width: 764px) {
+  .layout {
+    padding: 160px 15px 0 15px;
+    height: 500px;
+    justify-content: start;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .ellipseSection {
+    display: none;
+  }
 }

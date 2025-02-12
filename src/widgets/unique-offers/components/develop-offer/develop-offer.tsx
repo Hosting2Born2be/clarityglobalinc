@@ -46,12 +46,12 @@ function OfferItem({ title, value }: { title: string; value: string }) {
       <article className={st.offerItem}>
         <div className={st.offerTitleLayout}>
           <div className={st.dot} />
-          <Text className={st.offerValue} weight={400}>
+          <Text className={st.offerValue} weight={400} size="lg">
             {title}
           </Text>
         </div>
         <Divider className={st.divider} />
-        <Text className={st.offerValue} weight={600}>
+        <Text className={st.offerValue} weight={600} size="lg">
           {value}
         </Text>
       </article>

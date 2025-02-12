@@ -42,17 +42,17 @@ function ReviewCard({
   return (
     <article className={st.card}>
       <section className={st.cardName}>
-        <Text size="lg" weight={600}>
+        <Text size="base" weight={600}>
           {name}
         </Text>
         <div className={st.cardCountry}>
           <Icon />
-          <Text color="grey" size="base" weight={500}>
+          <Text color="grey" size="sm" weight={500}>
             {country}
           </Text>
         </div>
       </section>
-      <Text size="base" weight={300} className={st.cardReview}>
+      <Text size="sm" weight={300} className={st.cardReview}>
         {review}
       </Text>
     </article>

@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 
-import { useWindowSize } from '@/shared/lib/hooks';
+import { useWindowSize } from '@/shared/lib/hooks/hooks';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 

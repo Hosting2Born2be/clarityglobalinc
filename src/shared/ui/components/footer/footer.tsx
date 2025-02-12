@@ -81,25 +81,25 @@ export function Footer() {
       <Divider className={st.divider} />
       <section className={st.menu}>
         <div className={st.column}>
-          <Text size="lg" color="white" weight={600}>
+          <Text size="base" color="white" weight={600}>
             Office
           </Text>
           <Navigation href="mailto:info@clarityglobalinc.com">
             info@clarityglobalinc.com
           </Navigation>
           <Navigation href="tel:+14378873911">+14378873911</Navigation>
-          <Text size="lg" color="grey" weight={300} className={st.address}>
+          <Text size="sm" color="grey" weight={300} className={st.address}>
             Registered address: 125-9th Avenue Southeast, Suite 2000, Calgary,
             Alberta, T2P0P6
           </Text>
-          <Text size="lg" color="grey" weight={300} className={st.address}>
+          <Text size="sm" color="grey" weight={300} className={st.address}>
             Operational address: 3080 Yonge Street, Suite 6060, Toronto, Ontario
             M4N 3N, Canada
           </Text>
         </div>
         <div className={st.navMenu}>
           <div className={st.column}>
-            <Text size="lg" color="white" weight={600}>
+            <Text size="base" color="white" weight={600}>
               Menu
             </Text>
             <Navigation href="/">Home</Navigation>
@@ -133,7 +133,7 @@ export function Footer() {
           </div>
         </div>
         <div className={st.column}>
-          <Text size="lg" color="white" weight={600}>
+          <Text size="base" color="white" weight={600}>
             Legal
           </Text>
           <Navigation href="/terms-of-use">Terms of Use</Navigation>
