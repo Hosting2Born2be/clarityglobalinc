@@ -2,11 +2,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F85C3A;
-  font-size: 0.75rem;
   padding: 8px 26px;
   font-weight: 600;
-  background-color: #FEE7E1;
   border-radius: 70px;
   width: max-content;
+}
+
+.orange {
+  background-color: #FEE7E1;
+  color: #F85C3A;
+}
+
+.success {
+  background: transparent;
+  border: 1.5px solid #00AD45;
+  color: #00AD45;
+}
+
+.sizeBase {
+  font-size: 1.5rem;
+}
+
+.sizeSm {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .sizeBase {
+    font-size: 1.25rem;
+  }
 }

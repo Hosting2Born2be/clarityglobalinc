@@ -13,7 +13,7 @@ export function Title({
 }: {
   children: React.ReactNode;
   weight?: 300 | 400 | 500 | 600 | 700;
-  color?: 'black' | 'white';
+  color?: 'black' | 'white' | 'orange';
   level?: 1 | 2 | 3 | 4 | 5;
   className?: string;
 }) {
@@ -25,6 +25,7 @@ export function Title({
     [st.weightBold]: weight === 700,
     [st.colorBlack]: color === 'black',
     [st.colorWhite]: color === 'white',
+    [st.colorOrange]: color === 'orange',
     [st.levelOne]: level === 1,
     [st.levelTwo]: level === 2,
     [st.levelThree]: level === 3,

@@ -1,0 +1,54 @@
+.layout {
+  padding: 300px 165px 100px 165px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.titleEl {
+  flex-shrink: 0;
+}
+
+.steps {
+  margin-top: 27px;
+  display: flex;
+  gap: 30px;
+}
+
+.stepContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    gap: 0;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .layout {
+    padding: 50px 15px 50px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+  }
+}
