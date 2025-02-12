@@ -7,9 +7,24 @@ import st from './tag.module.css';
 export function Tag({
   children,
   className,
+  size = 'sm',
+  variant = 'orange',
 }: {
   children: React.ReactNode;
+  variant?: 'orange' | 'success';
+  size?: 'base' | 'sm';
   className?: string;
 }) {
-  return <span className={cn(st.tag, className)}>{children}</span>;
+  const tagClasses = cn(
+    st.tag,
+    {
+      [st.orange]: variant === 'orange',
+      [st.success]: variant === 'success',
+      [st.sizeBase]: size === 'base',
+      [st.sizeSm]: size === 'sm',
+    },
+    className,
+  );
+
+  return <span className={tagClasses}>{children}</span>;
 }
