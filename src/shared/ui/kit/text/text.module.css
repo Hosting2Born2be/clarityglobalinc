@@ -39,7 +39,19 @@
 }
 
 .sizeLarge {
+  font-size: 1.25rem;
+}
+
+.sizeBase {
   font-size: 1rem;
+}
+
+.sizeSmall {
+  font-size: 0.875rem;
+}
+
+.sizeExtraSmall {
+  font-size: 0.75rem;
 }
 
 @media (max-width: 768px) {
@@ -47,15 +59,7 @@
     font-size: 0.875rem;
   }
 
-  .sizeLarge {
+  .sizeBase {
     font-size: 0.875rem;
   }
-}
-
-.sizeBase {
-  font-size: 0.875rem;
-}
-
-.sizeSmall {
-  font-size: 0.75rem;
 }

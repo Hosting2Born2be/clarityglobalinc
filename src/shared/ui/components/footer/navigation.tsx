@@ -17,7 +17,7 @@ export function Navigation({
 }) {
   return (
     <Link href={href} target="_blank" className={className}>
-      <Text size="lg" color="grey" weight={300} className={st.navigation}>
+      <Text size="base" color="grey" weight={300} className={st.navigation}>
         {children}
       </Text>
     </Link>

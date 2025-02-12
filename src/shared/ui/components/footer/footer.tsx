@@ -24,7 +24,7 @@ export function Footer() {
           <Link href="https://clarityglobalinc.com/" className={st.logoLink}>
             <Image src="/full-logo.svg" alt="logo" width={183} height={33} />
           </Link>
-          <Text size="sm" color="grey" className={st.companyText}>
+          <Text size="xs" color="grey" className={st.companyText}>
             Сlarity Global Inc is owned, operated, and managed by Clarity Global
             Inc, a Canadian company registered with FINTRAC, Registration #
             M22927420.
@@ -56,10 +56,10 @@ export function Footer() {
             >
               <Linkedin />
               <div>
-                <Text size="sm" color="grey" weight={700}>
+                <Text size="xs" color="grey" weight={700}>
                   Clarity Global Inc
                 </Text>
-                <Text size="sm" color="grey">
+                <Text size="xs" color="grey">
                   Company Profile
                 </Text>
               </div>
@@ -67,10 +67,10 @@ export function Footer() {
             <Link className={st.linkedin} href="#" target="_blank">
               <Linkedin />
               <div>
-                <Text size="sm" color="grey" weight={700}>
+                <Text size="xs" color="grey" weight={700}>
                   Svitlana Koval
                 </Text>
-                <Text size="sm" color="grey">
+                <Text size="xs" color="grey">
                   Chief Accountant
                 </Text>
               </div>

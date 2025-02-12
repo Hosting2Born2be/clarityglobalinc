@@ -44,7 +44,7 @@ function OfferCard({ value }: { value: string }) {
   return (
     <article className={st.offerCard}>
       <div className={st.dot} />
-      <Text weight={500} size="base">
+      <Text weight={500} size="sm">
         {value}
       </Text>
     </article>
