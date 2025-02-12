@@ -1,12 +1,14 @@
 import { use } from 'react';
 import axios from 'axios';
 
-const fetchCountryCode = async () => {
+const fetchCountryCode = async (): Promise<string> => {
   try {
-    const ipResponse = await axios.get('https://api.ipify.org?format=json');
+    const ipResponse = await axios.get<{ ip: string }>(
+      'https://api.ipify.org?format=json',
+    );
     const { ip } = ipResponse.data;
 
-    const countryResponse = await axios.get(
+    const countryResponse = await axios.get<{ country: string }>(
       `https://ipinfo.io/${ip}?token=a1de4b6d03b20a`,
     );
 
@@ -17,4 +19,6 @@ const fetchCountryCode = async () => {
   }
 };
 
-export const useCountryCode = () => use<string>(fetchCountryCode());
+const countryCodePromise = fetchCountryCode();
+
+export const useCountryCode = () => use(countryCodePromise);

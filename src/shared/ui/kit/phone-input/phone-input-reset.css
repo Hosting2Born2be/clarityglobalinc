@@ -1,0 +1,16 @@
+.react-tel-input .flag-dropdown.open {
+  background: transparent !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: transparent !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: transparent !important;
+}
+
+.form-control {
+  font-family: Montserrat, Montserrat Fallback, sans-serif;
+}
