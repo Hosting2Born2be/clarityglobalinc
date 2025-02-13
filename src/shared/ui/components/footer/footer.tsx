@@ -109,7 +109,7 @@ export function Footer() {
             <Navigation href="/about-us">About us</Navigation>
             <Navigation href="/whistleblower">Whistleblower</Navigation>
             <Navigation
-              href="/acceptance-guidelines"
+              href="/customer-acceptance-guidelines"
               className={st.guidelinesMobile}
             >
               Acceptance Guidelines

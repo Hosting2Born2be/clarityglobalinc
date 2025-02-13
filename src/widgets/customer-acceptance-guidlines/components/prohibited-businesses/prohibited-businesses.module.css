@@ -1,0 +1,13 @@
+.divider {
+  height: 3px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #F85C3A;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
