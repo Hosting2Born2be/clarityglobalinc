@@ -1,0 +1,76 @@
+.layout {
+  margin: 100px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.guidelineLayout {
+  display: flex;
+  gap: 65px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.noTabInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.guidelineCard {
+  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .doubleArrow {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &[aria-selected="true"] .doubleArrow {
+    transform: rotate(-90deg);
+  }
+}
+
+.guidelineTabs {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guidelineCardLayout {
+  width: 100%;
+}
+
+.selectedTabBg {
+  background-color: #FEE7E1;
+}
+
+.guidelineInfo {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    margin: 100px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 50px 15px;
+  }
+
+  .guidelineTabs, .guidelineCard {
+    width: 100%;
+    gap: 10px;
+  }
+}

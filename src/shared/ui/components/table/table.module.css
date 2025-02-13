@@ -1,0 +1,42 @@
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.05);
+}
+
+.headerGroup {
+  background-color: #E2E2E2;
+  display: flex;
+  width: 100%;
+}
+
+.rowGroup {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.row {
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.header {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: left;
+
+  &:last-child {
+    border-right: 0;
+  }
+}

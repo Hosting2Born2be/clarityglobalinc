@@ -3,6 +3,7 @@
 import { cn } from '@/shared/lib/styles';
 
 import st from './text.module.css';
+import { TextColor, TextSize, TextWeight } from './types';
 
 export function Text({
   children,
@@ -12,9 +13,9 @@ export function Text({
   className,
 }: {
   children: React.ReactNode;
-  weight?: 300 | 400 | 500 | 600 | 700;
-  color?: 'black' | 'white' | 'red' | 'grey';
-  size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+  weight?: TextWeight;
+  color?: TextColor;
+  size?: TextSize;
   className?: string;
 }) {
   const textClasses = cn(st.text, {

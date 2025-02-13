@@ -27,7 +27,7 @@ const navigationMain = [
   { title: 'Receive', href: '/receive' },
   { title: 'Unique offer', href: '/unique-offers' },
   { title: 'Funds Safety', href: '/funds-safety' },
-  { title: 'Acceptance Guidelines', href: '/acceptance-guidelines' },
+  { title: 'Acceptance Guidelines', href: '/customer-acceptance-guidelines' },
   { title: 'Referral partner program', href: '/referral-partner-program' },
 ];
 

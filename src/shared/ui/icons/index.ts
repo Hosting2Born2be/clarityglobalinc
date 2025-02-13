@@ -3,6 +3,7 @@ export * from './back-quotes';
 export * from './canada';
 export * from './china';
 export * from './close';
+export * from './double-arrow';
 export * from './equal';
 export * from './facebook';
 export * from './four-dots';
