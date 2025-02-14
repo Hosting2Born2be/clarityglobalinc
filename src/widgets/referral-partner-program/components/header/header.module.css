@@ -1,0 +1,88 @@
+.layout {
+  display: flex;
+  height: 700px;
+  background-color: #F85C3A;
+  padding-top: 120px;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 83%;
+    background: url('rectangles.png') no-repeat right center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.title {
+  padding-left: 165px;
+  width: 55%;
+}
+
+.ellipseSm {
+  position: absolute;
+  left: 220px;
+  top: -300px;
+}
+
+.ellipseMd {
+  position: absolute;
+  left: 400px;
+  top: -180px;
+}
+
+.ellipseLg {
+  position: absolute;
+  left: 80px;
+  bottom: -200px;
+}
+
+@media(max-width: 1024px) {
+  .title {
+    padding-left: 15px;
+  }
+
+  .ellipseSm {
+    left: 0;
+  }
+
+  .ellipseMd {
+    left: 130px;
+  }
+
+  .ellipseLg {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    height: 466px;
+    align-items: start;
+
+    &::before {
+      height: 74%;
+    }
+  }
+
+  .title {
+    padding-top: 60px;
+    width: 100%;
+  }
+
+  .ellipseSm {
+    display: none;
+  }
+
+  .ellipseMd {
+    display: none;
+  }
+
+  .ellipseLg {
+    display: none;
+  }
+}
