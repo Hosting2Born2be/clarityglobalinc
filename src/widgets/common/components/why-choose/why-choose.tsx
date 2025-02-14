@@ -1,12 +1,13 @@
 'use client';
 
+import { cn } from '@/shared/lib/styles';
 import { Divider } from '@/shared/ui/kit/divider';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 import st from './why-choose.module.css';
 
-const options = [
+const defaultOptions = [
   {
     title: 'Faster payments',
     description: 'Send or receive your money worldwide just in minutes!',
@@ -37,17 +38,34 @@ const options = [
   },
 ];
 
-export function WhyChoose() {
+export function WhyChoose({
+  optionsView = 'grid',
+  title = 'Why choose Clarity Global Inc?',
+  options = defaultOptions,
+}: {
+  title?: string;
+  options?: { title: string; description: string }[];
+  optionsView?: 'grid' | 'list';
+}) {
   return (
     <section className={st.layout}>
       <section className={st.bannerLayout}>
         <Title level={1} className={st.title}>
-          Why choose Clarity Global Inc?
+          {title}
         </Title>
         <Divider />
-        <div className={st.optionsList}>
+        <div
+          className={
+            optionsView === 'grid' ? st.optionsListGrid : st.optionsList
+          }
+        >
           {options.map(({ title, description }) => (
-            <Option key={title} title={title} description={description} />
+            <Option
+              key={title}
+              title={title}
+              description={description}
+              optionsView={optionsView}
+            />
           ))}
         </div>
       </section>
@@ -58,14 +76,20 @@ export function WhyChoose() {
 export function Option({
   title,
   description,
+  optionsView,
 }: {
   title: string;
   description: string;
+  optionsView: 'grid' | 'list';
 }) {
+  const optionClasses = cn(st.option, {
+    [st.optionGrid]: optionsView === 'grid',
+  });
+
   return (
     <article className={st.optionsLayout}>
       <div className={st.optionDot} />
-      <div className={st.option}>
+      <div className={optionClasses}>
         <Text size="base" weight={600}>
           {title.toUpperCase()}
         </Text>
