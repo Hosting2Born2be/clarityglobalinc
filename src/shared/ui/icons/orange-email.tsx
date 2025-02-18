@@ -1,7 +1,23 @@
 'use client';
 
-export function OrangeEmail() {
-  return (
+export function OrangeEmail({ flat = false }: { flat?: boolean }) {
+  return flat ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="39"
+      height="38"
+      viewBox="0 0 39 38"
+      fill="none"
+    >
+      <rect x="0.5" width="38" height="38" rx="10" fill="#F85C3A" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.5 13.3417C9.5 13.3417 17.6502 17.9635 19.2322 17.9635C20.8902 17.9635 28.9522 13.43 28.9522 13.43L28.9651 12.62C28.9651 11.7258 28.2393 11 27.3427 11H11.1216C10.2258 11 9.5 11.7258 9.5 12.62V13.3417ZM28.9522 15.86C28.9522 15.86 20.9664 20.191 19.2322 20.191C17.6502 20.191 9.51215 15.86 9.51296 15.86L9.5 25.58C9.5 26.4742 10.2266 27.2 11.1216 27.2H27.3427C28.2393 27.2 28.9651 26.4742 28.9651 25.58L28.9522 15.86Z"
+        fill="white"
+      />
+    </svg>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"

@@ -1,0 +1,25 @@
+.layout {
+  padding: 189px 165px 50px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+@media (max-width: 1170px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    padding: 189px 15px 50px 15px;
+  }
+}

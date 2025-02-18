@@ -1,7 +1,32 @@
 'use client';
 
-export function OrangeTelegram() {
-  return (
+export function OrangeTelegram({ flat = false }: { flat?: boolean }) {
+  return flat ? (
+    <div
+      style={{
+        width: '38px',
+        height: '38px',
+        backgroundColor: '#f85c3a',
+        borderRadius: '10px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <svg
+        width="20"
+        height="17"
+        viewBox="0 0 20 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.83537 11.2191L7.52245 15.9702C7.98224 15.9702 8.1854 15.7571 8.44204 15.5043L10.6511 13.3274L15.247 16.7684C16.0928 17.2414 16.7032 16.9965 16.9139 15.9726L19.931 1.56445C20.2398 0.30941 19.4589 -0.259816 18.6497 0.112461L0.93382 7.03535C-0.275458 7.5269 -0.268408 8.21061 0.713394 8.51526L5.2597 9.95328L15.7849 3.22393C16.2818 2.91858 16.7378 3.08274 16.3635 3.41939L7.83511 11.2189L7.83537 11.2191Z"
+          fill="white"
+        ></path>
+      </svg>
+    </div>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"
