@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.currencyLayout {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currencyName {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
