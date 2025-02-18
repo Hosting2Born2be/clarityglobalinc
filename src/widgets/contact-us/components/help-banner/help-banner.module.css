@@ -1,0 +1,35 @@
+.layout {
+  background-color: #f85c3a;
+  padding: 90px 0;
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    border-radius: 15px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./rectangles.png') no-repeat right bottom;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  gap: 6px;
+}

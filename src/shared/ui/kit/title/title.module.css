@@ -2,6 +2,10 @@
   line-height: 106.8%;
 }
 
+.levelZero {
+  font-size: 4rem;
+}
+
 .levelOne {
   font-size: 3.125rem;
 }
@@ -55,6 +59,10 @@
 }
 
 @media (max-width: 768px) {
+  .levelZero {
+    font-size: 2rem;
+  }
+
   .levelOne {
     font-size: 1.5rem;
   }

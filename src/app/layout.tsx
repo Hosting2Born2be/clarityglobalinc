@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
+import { Header } from '@/features/header';
+
 import { ToastContainer } from '@/shared/lib/notify';
 import { Footer } from '@/shared/ui/components/footer';
-import { Header } from '@/shared/ui/components/header';
 
 import './globals.css';
 
