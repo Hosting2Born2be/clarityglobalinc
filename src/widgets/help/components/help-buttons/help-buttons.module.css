@@ -1,0 +1,19 @@
+.layout {
+  margin: 250px 165px 300px 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.title {
+  width: 65%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

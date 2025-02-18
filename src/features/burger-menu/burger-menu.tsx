@@ -41,13 +41,17 @@ const navigationSecondary = [
   { title: 'Contact Us', href: '/contact-us' },
 ];
 
-export function BurgerMenu() {
+export function BurgerMenu({
+  iconColor = 'white',
+}: {
+  iconColor?: 'white' | 'black';
+}) {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <Root open={open} onOpenChange={setOpen}>
       <Trigger>
-        <FourDots />
+        <FourDots fill={iconColor} />
       </Trigger>
       <Portal>
         <Overlay className={st.overlay} />

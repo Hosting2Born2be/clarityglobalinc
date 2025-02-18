@@ -27,7 +27,7 @@ export function Input({
   onBlur?: FocusEventHandler<HTMLInputElement>;
   fullWidth?: boolean;
   readonly?: boolean;
-  type?: 'text' | 'number' | 'password';
+  type?: 'text' | 'number' | 'password' | 'email';
   error?: React.ReactNode;
 }) {
   const inputClasses = cn(st.inputEl, {

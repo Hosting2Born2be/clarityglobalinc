@@ -53,7 +53,7 @@ export function Header() {
             }
           />
         </div>
-        <BurgerMenu />
+        <BurgerMenu iconColor={logoVariant} />
       </section>
     </header>
   );

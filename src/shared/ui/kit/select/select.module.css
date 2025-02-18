@@ -1,17 +1,18 @@
 .selectContent {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 6px;
   min-width: 120px;
   background-color: #FFF;
   border-radius: 6px;
-  padding: 5px;
+  padding: 25px;
   box-shadow:
       0px 10px 38px -10px rgba(22, 23, 24, 0.35),
       0px 10px 20px -15px rgba(22, 23, 24, 0.2);
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
+  z-index: 900;
 }
 .selectContent[data-side="top"] {
   animation-name: slideDownAndFade;
@@ -34,7 +35,6 @@
   align-items: center;
   height: 25px;
   position: relative;
-  padding-left: 25px;
   user-select: none;
   outline: none;
   color: #2D2D2D;

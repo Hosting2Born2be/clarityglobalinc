@@ -1,0 +1,18 @@
+.formFields {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
