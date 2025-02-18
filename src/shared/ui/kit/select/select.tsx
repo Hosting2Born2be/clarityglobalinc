@@ -20,7 +20,7 @@ export function Select({
 }: {
   options: SelectOption[];
   value: string;
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }) {
   return (
     <Root>
@@ -34,7 +34,7 @@ export function Select({
             <DropdownMenuItem
               key={option.value}
               className={st.selectItem}
-              onClick={() => onChange(option.value)}
+              onClick={() => onChange?.(option.value)}
             >
               {option.label}
             </DropdownMenuItem>

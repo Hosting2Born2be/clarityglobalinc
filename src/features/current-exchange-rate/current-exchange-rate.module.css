@@ -1,0 +1,19 @@
+.layout {
+  max-width: 430px;
+  width: 100%;
+  background-color: #f7f7f6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+}
+
+.exchangeRate {
+  padding: 30px 45px;
+}
+
+@media (max-width: 768px) {
+  .exchangeRate {
+    padding: 20px 30px;
+  }
+}
