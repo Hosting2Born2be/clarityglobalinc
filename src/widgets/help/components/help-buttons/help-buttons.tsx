@@ -4,8 +4,6 @@ import { SignUpDialog } from '@/core/auth/components';
 
 import { HelpFormDialog } from '@/widgets/help/components/help-form-dialog';
 
-import { HelpForm } from '@/features/help-form';
-
 import { Button } from '@/shared/ui/kit/button';
 import { Title } from '@/shared/ui/kit/title';
 
