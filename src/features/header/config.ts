@@ -1,1 +1,1 @@
-export const pageWithBlackLogo = new Set(['/contact-us']);
+export const pageWithBlackLogo = new Set(['/contact-us', '/help']);
