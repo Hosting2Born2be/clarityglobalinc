@@ -70,7 +70,7 @@ function parseNode(node: Node, listStyle = {}): React.ReactNode {
     const data = node.fields.rows.map(row => {
       const [first, second] = row.cells;
 
-      return { [first.value]: second.value };
+      return { [first.value]: second.value ?? '' };
     });
 
     return <PropertyList key={nanoid()} data={data} properties={columns} />;
