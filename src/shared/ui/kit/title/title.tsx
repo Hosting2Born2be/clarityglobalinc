@@ -12,7 +12,7 @@ export function Title({
   level = 2,
 }: {
   children: React.ReactNode;
-  weight?: 300 | 400 | 500 | 600 | 700;
+  weight?: 300 | 400 | 500 | 600 | 700 | 800;
   color?: 'black' | 'white' | 'orange';
   level?: 0 | 1 | 2 | 3 | 4 | 5;
   className?: string;

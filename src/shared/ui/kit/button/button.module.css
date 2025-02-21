@@ -51,6 +51,15 @@
   }
 }
 
+.orangeSecondary {
+  background-color: transparent;
+  color: #F85C3A;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 .fullWidth {
   width: 100%;
 }

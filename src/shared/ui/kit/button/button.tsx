@@ -18,7 +18,12 @@ export function Button({
   disabled = false,
 }: {
   children: React.ReactNode;
-  variant?: 'white' | 'transparent' | 'orange' | 'orangeOutline';
+  variant?:
+    | 'white'
+    | 'transparent'
+    | 'orange'
+    | 'orangeOutline'
+    | 'orangeSecondary';
   type?: 'submit' | 'reset' | 'button';
   fullWidth?: boolean;
   onSubmit?: FormEventHandler<HTMLButtonElement>;
@@ -34,6 +39,7 @@ export function Button({
       [st.transparentButton]: variant === 'transparent',
       [st.orangeButton]: variant === 'orange',
       [st.orangeOutlineButton]: variant === 'orangeOutline',
+      [st.orangeSecondary]: variant === 'orangeSecondary',
       [st.fullWidth]: fullWidth,
       [st.mediumSize]: size === 'md',
     },

@@ -1,5 +1,7 @@
-import { Header } from '@/widgets/customer-acceptance-guidlines/components/';
-import { Guidelines } from '@/widgets/customer-acceptance-guidlines/components/guidelines/guidelines';
+import {
+  Guidelines,
+  Header,
+} from '@/widgets/customer-acceptance-guidlines/components/';
 
 export default function CustomerAcceptanceGuidelines() {
   return (

@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/shared/lib/styles';
 import {
   type ColumnDef,
   flexRender,
@@ -12,9 +13,13 @@ import st from './table.module.css';
 export function Table<TData, TColumn>({
   data,
   columns,
+  className,
+  columnFullWidth = false,
 }: {
   data: TData[];
   columns: ColumnDef<TData, TColumn>[];
+  columnFullWidth?: boolean;
+  className?: string;
 }) {
   const table = useReactTable({
     data,
@@ -22,8 +27,10 @@ export function Table<TData, TColumn>({
     getCoreRowModel: getCoreRowModel(),
   });
 
+  const columnWidth = columnFullWidth ? `${100 / columns.length}%` : undefined;
+
   return (
-    <div className={st.table}>
+    <div className={cn(st.table, className)}>
       <div className={st.headerGroup}>
         {table.getHeaderGroups().map(headerGroup => (
           <div key={headerGroup.id} className={st.headerGroup}>
@@ -31,7 +38,9 @@ export function Table<TData, TColumn>({
               <div
                 key={header.id}
                 className={st.header}
-                style={{ width: header.column.columnDef.size ?? '100%' }}
+                style={{
+                  width: columnWidth || header.column.columnDef.size || '100%',
+                }}
               >
                 {header.isPlaceholder
                   ? null
@@ -47,19 +56,17 @@ export function Table<TData, TColumn>({
       <div>
         {table.getRowModel().rows.map(row => (
           <div key={row.id} className={st.rowGroup}>
-            {row.getVisibleCells().map(cell => {
-              console.log(cell.column.columnDef.size);
-
-              return (
-                <div
-                  key={cell.id}
-                  className={st.row}
-                  style={{ width: cell.column.columnDef.size ?? '100%' }}
-                >
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </div>
-              );
-            })}
+            {row.getVisibleCells().map(cell => (
+              <div
+                key={cell.id}
+                className={st.row}
+                style={{
+                  width: columnWidth || cell.column.columnDef.size || '100%',
+                }}
+              >
+                {flexRender(cell.column.columnDef.cell, cell.getContext())}
+              </div>
+            ))}
           </div>
         ))}
       </div>

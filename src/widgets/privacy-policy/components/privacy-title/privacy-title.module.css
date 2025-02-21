@@ -1,0 +1,18 @@
+.layout {
+  padding: 80px 165px 0 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
