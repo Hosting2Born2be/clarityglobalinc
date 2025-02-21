@@ -16,3 +16,19 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 1024px) {
+  .layout {
+    padding: 50px 15px 0 15px;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+
+  .download {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 30px;
+  }
+}

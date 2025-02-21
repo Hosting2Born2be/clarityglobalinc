@@ -11,7 +11,7 @@ export function PrivacyTitle() {
   return (
     <section className={st.layout}>
       <span className={st.download}>
-        <Title level={4} weight={800}>
+        <Title level={4} weight={800} className={st.title}>
           YOUR PRIVACY IS RESPECTED HERE
         </Title>
         <Button
