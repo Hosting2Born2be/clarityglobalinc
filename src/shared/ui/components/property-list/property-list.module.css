@@ -1,0 +1,31 @@
+.propertyList{
+  display: flex;
+  gap: 6%;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: max-content;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .row {
+    font-size: 0.75rem;
+  }
+
+  .properties {
+    font-size: 0.75rem;
+  }
+}

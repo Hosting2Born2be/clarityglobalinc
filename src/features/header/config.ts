@@ -1,1 +1,5 @@
-export const pageWithBlackLogo = new Set(['/contact-us', '/help']);
+export const pageWithBlackLogo = new Set([
+  '/contact-us',
+  '/help',
+  '/privacy-policy',
+]);

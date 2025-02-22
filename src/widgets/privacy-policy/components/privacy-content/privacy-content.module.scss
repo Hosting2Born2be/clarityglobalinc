@@ -1,0 +1,44 @@
+.layout {
+  padding: 100px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  div > div > div > section {
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      line-height: 1.4;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    padding: 100px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 50px 15px;
+
+    p, h5, ul {
+      font-size: 14px !important;
+    }
+  }
+}
