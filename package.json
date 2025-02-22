@@ -31,6 +31,7 @@
     "react-toastify": "^11.0.3",
     "react-use": "^17.6.0",
     "respinner": "^4.0.3",
+    "sass": "^1.85.0",
     "swiper": "^11.2.2",
     "zod": "^3.24.1",
     "zustand": "^5.0.3"
