@@ -9,7 +9,7 @@ import {
 
 export default async function PrivacyPolicy() {
   try {
-    const res = await axios.get(process.env.PRIVACY_POLICY_URL ?? '');
+    const res = await axios.get(`${process.env.SERVER_URL}/policies/1`);
     return (
       <PrivacyPolicyTemplate>
         <PrivacyList data={res.data.content.root.children} />

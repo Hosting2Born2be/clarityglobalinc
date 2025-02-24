@@ -24,6 +24,7 @@ export function Text({
     [st.weightMedium]: weight === 500,
     [st.weightSemibold]: weight === 600,
     [st.weightBold]: weight === 700,
+    [st.colorLightGrey]: color === 'lightGrey',
     [st.colorBlack]: color === 'black',
     [st.colorGrey]: color === 'grey',
     [st.colorWhite]: color === 'white',

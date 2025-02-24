@@ -11,55 +11,53 @@
   white-space: nowrap;
 }
 
+.background {
+  background-color: #F6F6F6;
+}
+
 .layout {
   margin-top: 114px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F6F6F6;
-  padding: 0 192px;
+  width: 84%;
 }
 
 .cardLayout {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
   gap: 35px;
   margin-top: 60px;
   margin-bottom: 200px;
 }
 
 .card {
-  text-align: center;
   background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 44px 24px 24px 24px;
-  width: 328px;
+  padding: 36px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
 }
 
-.dot {
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  background-color: #F85C3A;
-  border-radius: 100%;
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cardDescContainer {
-  width: 280px;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
   .cardLayout {
     margin-bottom: 120px;
+    flex-direction: column;
   }
 }
