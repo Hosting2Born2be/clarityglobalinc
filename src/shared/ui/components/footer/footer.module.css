@@ -1,6 +1,12 @@
-.layout {
-  padding: 68px 165px 28px 165px;
+.background {
   background-color: #2D2D2D;
+}
+
+.layout {
+  padding-top: 44px;
+  padding-bottom: 36px;
+  width: 84%;
+  margin: 0 auto;
   z-index: 30;
 }
 
@@ -11,6 +17,7 @@
 }
 
 .companyInfoLayout {
+  margin-bottom: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +50,7 @@
 }
 
 .address {
-  width: 263px;
+  width: 100%;
 }
 
 .linkedin {
@@ -54,8 +61,7 @@
 }
 
 .divider {
-  margin-top: 26px;
-  margin-bottom: 35px;
+  margin: 38px 0;
   background: rgba(255, 255, 255, 0.20);
 }
 
@@ -63,7 +69,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 6px;
+  gap: 10px;
 }
 
 .navigation {
@@ -80,28 +86,49 @@
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  gap: 80px;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.footerBanner {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navMenu {
   display: flex;
-  gap: 130px;
+  gap: 60px;
 }
 
 .guidelinesMobile {
   display: none;
 }
 
+.office {
+  width: 30%;
+}
+
 @media (max-width: 1340px) {
   .companyInfoLayout {
     flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 1024px) {
   .logoLink {
-    margin-left: -8px;
+  }
+
+  .footerBanner {
+    display: none;
   }
 
   .menu {
@@ -131,6 +158,8 @@
   }
 
   .layout {
+    width: 100%;
+    margin: 0;
     padding: 68px 15px 28px 15px;
   }
 
@@ -146,5 +175,13 @@
 @media (max-width: 768px) {
   .logo {
     flex-wrap: wrap;
+  }
+
+  .office {
+    width: 100%;
+  }
+
+  .navMenu {
+    width: 100%;
   }
 }
