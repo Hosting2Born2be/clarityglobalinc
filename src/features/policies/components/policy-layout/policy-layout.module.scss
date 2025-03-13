@@ -1,6 +1,7 @@
 .layout {
-  margin: 150px auto;
+  padding: 150px 0;
   max-width: 950px;
+  margin: 0 auto;
 
   h5 {
     font-style: normal;
@@ -19,7 +20,7 @@
 
 @media (max-width: 768px) {
   .layout {
-    margin: 140px 15px;
+    padding: 140px 15px;
     width: 100%;
   }
 }

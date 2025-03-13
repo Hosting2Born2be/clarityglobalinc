@@ -4,4 +4,5 @@ export const pageWithBlackLogo = new Set([
   '/privacy-policy',
   '/privacy-notice',
   '/terms-of-use',
+  '/cookie-policy',
 ]);
