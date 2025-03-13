@@ -141,9 +141,7 @@ export function Footer() {
             <Navigation href="/approved-communication-channels">
               Approved Communication Channels
             </Navigation>
-            <Navigation href="/app-scams-reimbursement">
-              APP Scams Reimbursement
-            </Navigation>
+            <Navigation href="/app-scams">APP Scams Reimbursement</Navigation>
           </div>
           <div className={st.footerBanner}>
             <Image
