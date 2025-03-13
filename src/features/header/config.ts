@@ -5,4 +5,5 @@ export const pageWithBlackLogo = new Set([
   '/privacy-notice',
   '/terms-of-use',
   '/cookie-policy',
+  '/anti-slavery-policy',
 ]);
