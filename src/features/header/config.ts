@@ -7,4 +7,5 @@ export const pageWithBlackLogo = new Set([
   '/cookie-policy',
   '/anti-slavery-policy',
   '/non-solicitation-policy',
+  '/approved-communication-channels',
 ]);
