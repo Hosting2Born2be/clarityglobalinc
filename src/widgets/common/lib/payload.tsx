@@ -139,17 +139,22 @@ function parseNode(node: Node, listStyle = {}): React.ReactNode {
   }
 
   if (node.type === 'list') {
-    const listSt =
-      node.listType === 'bullet'
-        ? {
-            listStyleType: 'disc',
-            listPositionType: 'inside',
-            marginLeft: '20px',
-            color: '#2d2d2d',
-          }
-        : '';
+    const isOrderedList = node.listType === 'number';
+    const ListTag = isOrderedList ? 'ol' : 'ul';
 
-    return <ul key={nanoid()}>{parseChildren(node.children, listSt)}</ul>;
+    const listStyle = {
+      listStyleType: isOrderedList ? 'decimal' : 'disc',
+      listPosition: 'inside',
+      marginLeft: '20px',
+      color: '#2d2d2d',
+      marginBottom: isOrderedList ? '15px' : '0',
+    };
+
+    return (
+      <ListTag key={nanoid()} style={listStyle}>
+        {parseChildren(node.children, listStyle)}
+      </ListTag>
+    );
   }
 
   if (node.type === 'listitem') {
