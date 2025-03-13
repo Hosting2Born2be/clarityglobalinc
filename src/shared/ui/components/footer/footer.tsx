@@ -135,6 +135,9 @@ export function Footer() {
             <Navigation href="/anti-slavery-policy">
               Anti-Slavery Policy
             </Navigation>
+            <Navigation href="/non-solicitation-policy">
+              Non-Solicitation Policy
+            </Navigation>
             <Navigation href="/approved-communication-channels">
               Approved Communication Channels
             </Navigation>
