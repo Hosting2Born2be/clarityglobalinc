@@ -1,5 +1,7 @@
 'use client';
 
+import { JSX } from 'react';
+
 import { cn } from '@/shared/lib/styles';
 
 import st from './title.module.css';
@@ -17,6 +19,7 @@ export function Title({
   level?: 0 | 1 | 2 | 3 | 4 | 5;
   className?: string;
 }) {
+  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   const titleClasses = cn(st.title, {
     [st.weightLight]: weight === 300,
     [st.weightNormal]: weight === 400,
@@ -34,5 +37,5 @@ export function Title({
     [st.levelFive]: level === 5,
   });
 
-  return <h1 className={cn(titleClasses, className)}>{children}</h1>;
+  return <Tag className={cn(titleClasses, className)}>{children}</Tag>;
 }

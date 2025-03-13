@@ -25,6 +25,7 @@
 
 .companyText {
   width: 100%;
+  max-width: 579px;
 }
 
 .socialsLayout {

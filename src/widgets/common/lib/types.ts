@@ -7,6 +7,8 @@ export type Node = {
     blockType: 'table' | 'list';
     columns: { header: string }[];
     rows: { cells: { value: string }[] }[];
+    url?: string;
+    newTab?: boolean;
   };
   children?: Node[];
 };

@@ -51,7 +51,6 @@ export async function getExchangeRate({
       }
     }
 
-    console.log(rates);
     return { rates, error };
   } catch (error) {
     console.error('Error fetching exchange rates:', error);

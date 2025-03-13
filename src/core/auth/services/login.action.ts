@@ -21,11 +21,9 @@ export async function login(email: string, password: string) {
         sameSite: 'strict',
         maxAge: 60 * 60 * 24 * 7,
       });
-      console.log('Cookie set successfully');
     } catch (error) {
       console.error('Error setting cookie:', error);
     }
-    console.log(cookieStore.getAll());
 
     return { success: true };
   } catch {
