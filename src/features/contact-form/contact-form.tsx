@@ -46,7 +46,7 @@ export function ContactForm() {
       notifySuccess('Your message was sent successfully.');
       reset();
     } else {
-      console.log('@error res', res);
+      console.error('@error res', res);
       notifyError('Failed to send the message. Try again a little later.');
     }
   });

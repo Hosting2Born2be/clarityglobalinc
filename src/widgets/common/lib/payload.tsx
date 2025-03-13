@@ -9,10 +9,32 @@ import { Text } from '@/shared/ui/kit/text';
 import st from './payload.module.css';
 import { Node } from './types';
 
-export function parseJSONToElements(json: Node[]): ReactNode[] {
-  if (!Array.isArray(json)) return [<></>];
+export function parseJSONToElements(json: Node[]): {
+  elements: ReactNode[];
+  lastUpdate: { version?: string; lastUpdate?: string } | null;
+} {
+  if (!Array.isArray(json)) return { elements: [<></>], lastUpdate: null };
 
-  return json.map(parseNode);
+  let lastUpdate: { version?: string; lastUpdate?: string } | null = null;
+  const elements: ReactNode[] = [];
+
+  if (
+    json[0].type === 'paragraph' &&
+    json[0].children?.some(child => child.text?.includes('Version'))
+  ) {
+    lastUpdate = {
+      version: json[0].children?.find(child => child.text?.includes('Version'))
+        ?.text,
+      lastUpdate: json[0].children?.find(child => child.text?.includes('Date'))
+        ?.text,
+    };
+
+    json.shift();
+  }
+
+  elements.push(...json.map(parseNode));
+
+  return { elements, lastUpdate: lastUpdate ?? null };
 }
 
 function parseNode(node: Node, listStyle = {}): React.ReactNode {
@@ -57,6 +79,42 @@ function parseNode(node: Node, listStyle = {}): React.ReactNode {
     );
   }
 
+  if (node.type === 'link') {
+    return (
+      <a
+        key={nanoid()}
+        href={node.fields?.url}
+        target={node.fields?.newTab ? '_blank' : '_self'}
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: 'underline',
+          fontWeight: 400,
+          color: '#f85c3a',
+        }}
+      >
+        {parseChildren(node.children)}
+      </a>
+    );
+  }
+
+  if (node.type === 'autolink') {
+    return (
+      <a
+        key={nanoid()}
+        href={node.fields?.url}
+        target="_self"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: 'underline',
+          fontWeight: 400,
+          color: '#f85c3a',
+        }}
+      >
+        {parseChildren(node.children)}
+      </a>
+    );
+  }
+
   if (node.type === 'block' && node.fields?.blockType === 'list') {
     const columns = columnDefBuilder(
       node.fields.rows.map(item => {
@@ -87,6 +145,7 @@ function parseNode(node: Node, listStyle = {}): React.ReactNode {
             listStyleType: 'disc',
             listPositionType: 'inside',
             marginLeft: '20px',
+            color: '#2d2d2d',
           }
         : '';
 

@@ -13,7 +13,7 @@ import { Accordion } from '@/shared/ui/kit/accordion';
 import { Title } from '@/shared/ui/kit/title';
 
 export function PrivacyList({ data }: { data: Node[] }) {
-  const elements = parseJSONToElements(data);
+  const { elements } = parseJSONToElements(data);
 
   const groupedElements = groupElementsByH4(elements);
 
