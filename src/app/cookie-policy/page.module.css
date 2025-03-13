@@ -1,0 +1,24 @@
+.title {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .titleEl {
+    font-size: 24px !important;
+  }
+}
