@@ -26,7 +26,7 @@ export default async function TermsOfUse() {
         update={lastUpdate?.lastUpdate ?? ''}
       />
       <section className={st.title}>
-        <Title level={4} weight={700}>
+        <Title level={4} weight={700} className={st.titleEl}>
           Terms of Use
         </Title>
         <Link href="/terms-of-use.pdf" target="_blank">

@@ -16,3 +16,10 @@
     color: #2d2d2d;
   }
 }
+
+@media (max-width: 768px) {
+  .layout {
+    margin: 140px 15px;
+    width: 100%;
+  }
+}
