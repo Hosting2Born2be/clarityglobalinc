@@ -32,26 +32,28 @@ export function TrackingCurrencies() {
       <Title level={3} className={st.title}>
         Why tracking currency exchange rates matters
       </Title>
-      <div className={st.cardsLayout}>
-        <section className={st.cards}>
-          {data.map(({ title, description }, i) => (
-            <TrackingCard
-              key={title}
-              title={title}
-              description={description}
-              index={i}
-            />
-          ))}
-        </section>
-      </div>
-      <div className={st.signUp}>
-        <SignUpDialog
-          trigger={
-            <Button variant="orangeOutline" size="md">
-              Sign Up Now
-            </Button>
-          }
-        />
+      <div className={st.cardsContainer}>
+        <div className={st.cardsLayout}>
+          <section className={st.cards}>
+            {data.map(({ title, description }, i) => (
+              <TrackingCard
+                key={title}
+                title={title}
+                description={description}
+                index={i}
+              />
+            ))}
+          </section>
+        </div>
+        <div className={st.signUp}>
+          <SignUpDialog
+            trigger={
+              <Button variant="orange" size="md">
+                Sign Up Now
+              </Button>
+            }
+          />
+        </div>
       </div>
     </section>
   );

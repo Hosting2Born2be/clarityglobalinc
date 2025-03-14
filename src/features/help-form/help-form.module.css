@@ -16,3 +16,10 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}

@@ -8,6 +8,7 @@ import {
   Root,
 } from '@radix-ui/react-dropdown-menu';
 
+import { cn } from '@/shared/lib/styles';
 import { ArrowDown } from '@/shared/ui/icons';
 
 import st from './select.module.css';
@@ -17,14 +18,16 @@ export function Select({
   options,
   value,
   onChange,
+  triggerClassName,
 }: {
   options: SelectOption[];
   value: string;
   onChange?: (value: string) => void;
+  triggerClassName?: string;
 }) {
   return (
     <Root>
-      <DropdownMenuTrigger className={st.selectTrigger}>
+      <DropdownMenuTrigger className={cn(st.selectTrigger, triggerClassName)}>
         {value}
         <ArrowDown />
       </DropdownMenuTrigger>

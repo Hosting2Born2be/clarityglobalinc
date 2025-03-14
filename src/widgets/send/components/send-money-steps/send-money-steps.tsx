@@ -45,7 +45,11 @@ function OptionCard({
 
   return (
     <article className={cardClasses}>
-      <Text weight={500} color={variant === 'black' ? 'white' : 'black'}>
+      <Text
+        weight={500}
+        size="base"
+        color={variant === 'black' ? 'white' : 'black'}
+      >
         {title}
       </Text>
     </article>

@@ -30,10 +30,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transform-origin: center;
   }
 
   &[data-state="open"] > .triggerIcon > .arrowIcon {
-    transform: translate(-48%, -48%) rotate(180deg);
+    transform: translate(-52%, -56%) rotate(180deg);
   }
 }
 

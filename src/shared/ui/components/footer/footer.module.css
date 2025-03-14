@@ -52,6 +52,7 @@
 
 .address {
   width: 100%;
+  opacity: 0.8;
 }
 
 .linkedin {
@@ -75,6 +76,7 @@
 
 .navigation {
   transition: ease-in-out 0.5s;
+  opacity: 0.8;
 
   &:hover {
     color: #F85C3A;
