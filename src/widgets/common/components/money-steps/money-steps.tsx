@@ -48,10 +48,10 @@ function StepCard({
         {number}
       </Title>
       <section className={st.cardInfo}>
-        <Text size="sm" weight={600} className={st.text}>
+        <Text size="lg" weight={600} className={st.text}>
           {title}
         </Text>
-        <Text size="xs" weight={500} className={st.text}>
+        <Text size="sm" weight={500} className={st.text}>
           {description}
         </Text>
       </section>

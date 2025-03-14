@@ -114,7 +114,7 @@ export function Footer() {
               <Navigation href="/referral-partner-program">
                 Referral partner program
               </Navigation>
-              <Navigation href="/virtual-cards-services">
+              <Navigation href="https://vc-clarity.com/">
                 Virtual cards services
               </Navigation>
               <Navigation href="/exchange-rates">Exchange rates</Navigation>

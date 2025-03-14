@@ -26,6 +26,10 @@
   }
 }
 
+.cardsContainer {
+  background-color: #f6f6f6;
+}
+
 .cardsLayout {
   background-color: #f6f6f6;
   position: relative;
@@ -63,7 +67,8 @@
 }
 
 .signUp {
-  margin-top: 60px;
+  margin-top: 20px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

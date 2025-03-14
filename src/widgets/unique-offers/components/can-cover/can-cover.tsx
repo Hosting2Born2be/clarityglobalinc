@@ -73,7 +73,9 @@ function CoverStep({ title, list }: { title: string; list?: string[] }) {
     <article className={st.step}>
       <Dot width={20} height={20} />
       <section>
-        <Text size="base">{title}</Text>
+        <Text size="base" weight={400}>
+          {title}
+        </Text>
         <ul
           style={{
             listStyleType: 'disc',
@@ -87,7 +89,9 @@ function CoverStep({ title, list }: { title: string; list?: string[] }) {
               key={item}
               style={{ listStyleType: 'disc', marginLeft: '20px' }}
             >
-              <Text size="base">{item}</Text>
+              <Text size="base" weight={400}>
+                {item}
+              </Text>
             </li>
           ))}
         </ul>

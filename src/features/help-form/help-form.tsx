@@ -92,7 +92,13 @@ export function HelpForm({
             <Controller
               name="reason"
               control={control}
-              render={({ field }) => <Select options={reasons} {...field} />}
+              render={({ field }) => (
+                <Select
+                  triggerClassName={st.select}
+                  options={reasons}
+                  {...field}
+                />
+              )}
             />
           </div>
           <div>
