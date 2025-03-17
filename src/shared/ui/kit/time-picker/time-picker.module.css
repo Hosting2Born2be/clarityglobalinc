@@ -3,7 +3,6 @@
   color: #2D2D2D;
   border: none;
   outline: none;
-  font-size: 0.875rem;
   font-family: Montserrat, Montserrat Fallback, sans-serif;
   width: max-content;
 }
@@ -20,4 +19,12 @@
 
 .inputBorderError {
   border: 1px solid #f00;
+}
+
+.sizeBase {
+  font-size: 0.875rem;
+}
+
+.sizeSm {
+  font-size: 0.75rem;
 }

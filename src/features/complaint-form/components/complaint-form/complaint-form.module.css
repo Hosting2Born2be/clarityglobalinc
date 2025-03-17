@@ -1,6 +1,79 @@
+.sectionLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .layout {
   border-radius: 40px;
   background: #F6F6F6;
   padding: 55px 65px;
   width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.radioLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  gap: 15px;
+}
+
+.annotation {
+  color: #989898;
+  font-size: 12px;
+}
+
+.formLayout {
+  margin-bottom: 20px;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.inputAnnotation {
+  margin-top: 10px;
+}
+
+.btnPadding {
+  padding: 14px 97px 12px 97px;
+}
+
+.dateTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.fullWidthRow {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 55px 0;
+    background-color: transparent;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .row {
+    flex-wrap: wrap;
+  }
 }

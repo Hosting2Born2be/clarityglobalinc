@@ -9,7 +9,8 @@ export function ComplaintAnnotation() {
   return (
     <section className={st.layout}>
       <Title weight={600} className={st.title}>
-        Anonymous complaint form
+        Anonymous
+        <br /> complaint form
       </Title>
       <span className={st.divider} />
       <div>

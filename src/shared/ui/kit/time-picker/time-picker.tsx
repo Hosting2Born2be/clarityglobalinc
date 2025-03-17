@@ -4,7 +4,6 @@ import { FocusEventHandler } from 'react';
 import TPicker from 'react-time-picker';
 
 import { cn } from '@/shared/lib/styles';
-import { Text } from '@/shared/ui/kit/text';
 
 import 'react-time-picker/dist/TimePicker.css';
 import './reset.css';
@@ -18,6 +17,7 @@ export function TimePicker({
   error,
   readonly = false,
   fullWidth = true,
+  size = 'base',
 }: {
   value?: string | Date;
   className?: string;
@@ -26,19 +26,21 @@ export function TimePicker({
   fullWidth?: boolean;
   readonly?: boolean;
   error?: React.ReactNode;
+  size?: 'base' | 'sm';
 }) {
   const inputClasses = cn(st.inputEl, {
     [st.widthFull]: fullWidth,
     [st.widthMax]: !fullWidth,
     [st.inputBorderError]: error,
     [st.inputBorderDefault]: !error,
+    [st.sizeBase]: size === 'base',
+    [st.sizeSm]: size === 'sm',
   });
 
   return (
     <span
       style={{
         position: 'relative',
-        width: '100%',
         marginBottom: '4px',
       }}
     >
@@ -55,13 +57,6 @@ export function TimePicker({
         format="HH:mm"
         disabled={readonly}
       />
-      <div style={{ position: 'absolute', left: 16 }}>
-        {error && (
-          <Text color="red" size="sm" weight={500}>
-            {error}
-          </Text>
-        )}
-      </div>
     </span>
   );
 }
