@@ -18,8 +18,10 @@ export function Input({
   readonly = false,
   fullWidth = true,
   type = 'text',
+  size = 'base',
+  hideErrorText = false,
 }: {
-  value?: string | string[] | number;
+  value?: string | string[] | number | Date;
   defaultValue?: string | string[] | number;
   className?: string;
   placeholder?: string;
@@ -27,14 +29,18 @@ export function Input({
   onBlur?: FocusEventHandler<HTMLInputElement>;
   fullWidth?: boolean;
   readonly?: boolean;
-  type?: 'text' | 'number' | 'password' | 'email';
+  type?: 'text' | 'number' | 'password' | 'email' | 'date';
   error?: React.ReactNode;
+  size?: 'base' | 'sm';
+  hideErrorText?: boolean;
 }) {
   const inputClasses = cn(st.inputEl, {
     [st.widthFull]: fullWidth,
     [st.widthMax]: !fullWidth,
     [st.inputBorderError]: error,
     [st.inputBorderDefault]: !error,
+    [st.sizeSm]: size === 'sm',
+    [st.sizeBase]: size === 'base',
   });
 
   return (
@@ -43,14 +49,17 @@ export function Input({
         id="input-container"
         placeholder={placeholder}
         className={cn(st.inputContainer, inputClasses, className)}
-        value={value}
+        value={String(value)}
         type={type}
         defaultValue={defaultValue}
         onChange={onChange}
         onBlur={onBlur}
         readOnly={readonly}
       />
-      <div style={{ position: 'absolute', left: 16 }}>
+      <div
+        style={{ position: 'absolute', left: 16 }}
+        className={cn({ [st.hideErrorText]: hideErrorText })}
+      >
         {error && (
           <Text color="red" size="sm" weight={500}>
             {error}

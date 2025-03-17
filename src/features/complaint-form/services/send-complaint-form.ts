@@ -9,17 +9,18 @@ import {
 } from '@/shared/config/env';
 import { makeBody } from '@/shared/lib/email';
 
-export async function sendEmail({
-  name,
+import { ComplaintSchema } from '../lib/complaint.schema';
+
+export async function sendComplaintForm({
+  subject,
+  complaint,
   email,
-  phone,
-  message,
-}: {
-  name: string;
-  email: string;
-  phone: string;
-  message?: string;
-}) {
+  dayPart,
+  isContact,
+  additionalInfo,
+  date,
+  time,
+}: ComplaintSchema) {
   try {
     const OAuth2 = google.auth.OAuth2;
     const oauth2Client = new OAuth2(
@@ -43,12 +44,14 @@ export async function sendEmail({
     const adminEmailBody = makeBody(
       EMAIL_USER,
       EMAIL_USER,
-      'New Inquiry from Contact Form',
+      'Anonymous complaint from Form',
       `
-      <p><b>Name:</b> ${name}</p>
-      <p><b>Message:</b> ${message}</p>
-      <p><b>Phone:</b> ${phone}</p>
-      <p><b>Email:</b> ${email}</p>
+        <p><b>Date and time of issue:</b> ${date} ${time}${dayPart}</p>
+        <p><b>Subject:</b> ${subject}</p>
+        <p><b>Compliant:</b> ${complaint}</p>
+        <p><b>Related employee, department, service:</b> ${additionalInfo}</p>
+        <p><b>Need contact:</b> ${isContact === 'true' ? 'Yes' : 'No'}</p>
+        <p><b>Email:</b> ${email ?? 'None'}</p>
       `,
     );
 

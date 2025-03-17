@@ -1,0 +1,14 @@
+.layout {
+  color: #F83A3A;
+  font-size: 16px;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #FFDFDF;
+  padding: 15px;
+}

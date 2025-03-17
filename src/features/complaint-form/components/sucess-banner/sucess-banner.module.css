@@ -1,0 +1,14 @@
+.layout {
+  background-color: rgba(0, 162, 84, 0.15);
+  color: #2D2D2D;
+  font-size: 16px;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 15px;
+}

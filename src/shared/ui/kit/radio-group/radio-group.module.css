@@ -17,8 +17,6 @@
   border-radius: 100%;
   border: 1px solid #DCDCDC;
   background-color: #FFFFFF;
-  width: 8px;
-  height: 8px;
   cursor: pointer;
 
   &[data-state="checked"] {
@@ -26,14 +24,17 @@
   }
 }
 
-.indicator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 6px;
-  height: 6px;
-  position: relative;
+.itemSizeSm {
+  width: 8px;
+  height: 8px;
+}
 
+.itemSizeMd {
+  width: 14px;
+  height: 14px;
+}
+
+.indicatorSizeSm {
   &::after {
     content: "";
     display: block;
@@ -42,6 +43,24 @@
     border-radius: 50%;
     background-color: #F85C3A;
   }
+}
+
+.indicatorSizeMd {
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F85C3A;
+  }
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .label{
@@ -54,4 +73,8 @@
 .content {
   display: flex;
   align-items: center;
+}
+
+.reversOrder {
+  flex-direction: row-reverse;
 }

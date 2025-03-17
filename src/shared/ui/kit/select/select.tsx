@@ -19,16 +19,27 @@ export function Select({
   value,
   onChange,
   triggerClassName,
+  textSize = 'base',
 }: {
   options: SelectOption[];
   value: string;
   onChange?: (value: string) => void;
+  textSize?: string;
   triggerClassName?: string;
 }) {
+  const triggerClasses = cn(
+    st.selectTrigger,
+    {
+      [st.sizeBase]: textSize === 'base',
+      [st.sizeSm]: textSize === 'sm',
+    },
+    triggerClassName,
+  );
+
   return (
     <Root>
-      <DropdownMenuTrigger className={cn(st.selectTrigger, triggerClassName)}>
-        {value}
+      <DropdownMenuTrigger className={triggerClasses}>
+        {options.find(item => item.value === value)?.label}
         <ArrowDown />
       </DropdownMenuTrigger>
       <DropdownMenuPortal>

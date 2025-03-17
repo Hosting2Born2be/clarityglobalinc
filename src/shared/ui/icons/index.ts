@@ -1,3 +1,4 @@
+export * from './alert';
 export * from './arrow-down';
 export * from './back-quotes';
 export * from './canada';
@@ -28,6 +29,7 @@ export * from './pdf';
 export * from './poland';
 export * from './segal-logo';
 export * from './stikeman-logo';
+export * from './sucess';
 export * from './support-ukraine';
 export * from './telegram';
 export * from './transparency';

@@ -4,24 +4,13 @@
   border: none;
   outline: none;
   font-family: Montserrat, Montserrat Fallback, sans-serif;
-}
-
-.sizeBase {
-  font-size: 0.875rem;
-}
-
-.sizeSm {
-  font-size: 0.75rem;
+  width: max-content;
 }
 
 .inputContainer {
   background-color: #FFF;
   border-radius: 62px;
   padding: 14px 20px;
-}
-
-.time {
-  width: 200px;
 }
 
 .inputBorderDefault {
@@ -32,14 +21,10 @@
   border: 1px solid #f00;
 }
 
-.hideErrorText {
-  display: none;
+.sizeBase {
+  font-size: 0.875rem;
 }
 
-.widthFull {
-  width: 100%;
-}
-
-.widthMax {
-  width: max-content;
+.sizeSm {
+  font-size: 0.75rem;
 }
