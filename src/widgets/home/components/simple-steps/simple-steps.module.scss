@@ -47,12 +47,17 @@
   padding: 20px;
 }
 
-.cardBlack {
-  background-color: #2D2D2D;
-}
-
 .cardWhite {
   background-color: #FFFFFF;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background-color: #2D2D2D;
+
+    p {
+      color: #FFFFFF;
+    }
+  }
 }
 
 .cardNumber {

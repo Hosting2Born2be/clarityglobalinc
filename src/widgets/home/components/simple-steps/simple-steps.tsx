@@ -7,7 +7,7 @@ import { Button } from '@/shared/ui/kit/button';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
-import st from './simple-steps.module.css';
+import st from './simple-steps.module.scss';
 
 const steps = [
   {
@@ -76,22 +76,17 @@ function StepCard({
   description: string;
 }) {
   return (
-    <article
-      className={cn(st.cardLayout, {
-        [st.cardBlack]: number === 1,
-        [st.cardWhite]: number !== 1,
-      })}
-    >
+    <article className={cn(st.cardLayout, st.cardWhite)}>
       <div className={st.cardNumber}>
         <Title level={4} weight={700} color="white">
           {number}
         </Title>
       </div>
       <div className={st.cardText}>
-        <Text size="base" weight={600} color={number === 1 ? 'white' : 'black'}>
+        <Text size="base" weight={600} color="black">
           {title}
         </Text>
-        <Text size="sm" weight={500} color={number === 1 ? 'white' : 'black'}>
+        <Text size="sm" weight={500} color="black">
           {description}
         </Text>
       </div>
