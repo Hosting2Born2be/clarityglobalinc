@@ -1,33 +1,30 @@
 'use client';
 
-import { ChangeEventHandler, FocusEventHandler } from 'react';
+import { FocusEventHandler } from 'react';
+import TPicker from 'react-time-picker';
 
 import { cn } from '@/shared/lib/styles';
 import { Text } from '@/shared/ui/kit/text';
 
-import st from './input.module.css';
+import 'react-time-picker/dist/TimePicker.css';
+import './reset.css';
+import st from './time-picker.module.css';
 
-export function Input({
+export function TimePicker({
   value,
-  defaultValue,
   className,
   onChange,
   onBlur,
-  placeholder,
   error,
   readonly = false,
   fullWidth = true,
-  type = 'text',
 }: {
-  value?: string | string[] | number | Date;
-  defaultValue?: string | string[] | number;
+  value?: string | Date;
   className?: string;
-  placeholder?: string;
-  onChange?: ChangeEventHandler<HTMLInputElement>;
+  onChange?: (value: string | Date | null) => void;
   onBlur?: FocusEventHandler<HTMLInputElement>;
   fullWidth?: boolean;
   readonly?: boolean;
-  type?: 'text' | 'number' | 'password' | 'email' | 'date';
   error?: React.ReactNode;
 }) {
   const inputClasses = cn(st.inputEl, {
@@ -38,17 +35,25 @@ export function Input({
   });
 
   return (
-    <span style={{ position: 'relative', width: '100%', marginBottom: '4px' }}>
-      <input
-        id="input-container"
-        placeholder={placeholder}
-        className={cn(st.inputContainer, inputClasses, className)}
-        value={String(value)}
-        type={type}
-        defaultValue={defaultValue}
+    <span
+      style={{
+        position: 'relative',
+        width: '100%',
+        marginBottom: '4px',
+      }}
+    >
+      <TPicker
+        className={cn(st.inputContainer, st.time, inputClasses, className)}
+        value={value}
+        hourPlaceholder="hh"
+        minutePlaceholder="mm"
         onChange={onChange}
         onBlur={onBlur}
-        readOnly={readonly}
+        disableClock={true}
+        clearIcon={null}
+        clockIcon={null}
+        format="HH:mm"
+        disabled={readonly}
       />
       <div style={{ position: 'absolute', left: 16 }}>
         {error && (

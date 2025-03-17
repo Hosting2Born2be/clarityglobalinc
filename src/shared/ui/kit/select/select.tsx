@@ -25,7 +25,7 @@ export function Select({
   return (
     <Root>
       <DropdownMenuTrigger className={st.selectTrigger}>
-        {value}
+        {options.find(item => item.value === value)?.label}
         <ArrowDown />
       </DropdownMenuTrigger>
       <DropdownMenuPortal>

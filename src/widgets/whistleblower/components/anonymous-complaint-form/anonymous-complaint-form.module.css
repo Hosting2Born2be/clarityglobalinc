@@ -1,0 +1,5 @@
+.layout {
+  display: flex;
+  gap: 30px;
+  padding: 80px 165px;
+}
